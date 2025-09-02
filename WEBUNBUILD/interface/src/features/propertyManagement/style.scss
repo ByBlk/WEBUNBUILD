@@ -1,0 +1,147 @@
+.GestionPropriete {
+    margin: 80px;
+    width: 445px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 6px;
+    height: 540px;
+
+    & img {
+        width: 445px;
+
+    }
+    
+
+    .Container {
+        padding: 0 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Title {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #BADAFF;
+    }
+
+    .Span {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #FFFFFF;
+
+        opacity: 0.9;
+    }
+
+    .Buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .cSlider {
+        background-color: none;
+        width: 240px;
+
+        & .MuiSlider-thumb {
+            background: linear-gradient(180deg, rgba(20, 198, 36, 0.7) 0%, rgba(30, 180, 90, 0.406) 100%) !important;
+
+        }
+
+        & .MuiSlider-track {
+            background: linear-gradient(180deg, rgba(20, 198, 36, 0.7) 0%, rgba(30, 180, 90, 0.406) 100%) !important;
+        }
+
+        & .MuiSlider-rail {
+            height: 10px;
+            border-radius: 4px;
+            background: #FFFFFF3B;
+
+        }
+
+        & .MuiSlider-track {
+            border: none;
+            height: 10px;
+            border-radius: 4px
+        }
+
+        & .MuiSlider-thumb {
+            box-shadow: none !important;
+            width: 22px;
+            height: 22px;
+
+        }
+
+        & .MuiSlider-valueLabelOpen {
+            &:before {
+                display: none;
+            }
+
+            position: absolute;
+            transform: translateY(7px);
+            background-color: transparent;
+        }
+
+    }
+
+    .Submit {
+        margin: 22px auto;
+    }
+
+    .buttonCustom {
+        justify-content: center;
+        align-items: center;
+
+        img {
+            left: 5px;
+            height: 10px;
+            width: auto;
+            margin-right: 5px;
+            transform: translateY(1px);
+        }
+    }
+
+    .List {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 405px;
+        max-height: 300px;
+        height: 300px;
+        overflow: auto;
+    }
+
+    .El {
+        width: 389px;
+        border-radius: 3px;
+        min-height: 25px;
+        flex-direction: row-reverse;
+        justify-content: start;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover,
+        &.selected {
+            background: linear-gradient(180deg, rgba(94, 108, 182, 0.6) 0%, rgba(94, 108, 182, 0.372) 100%);
+        }
+    }
+}

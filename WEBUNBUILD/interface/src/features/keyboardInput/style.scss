@@ -1,0 +1,60 @@
+.KeyboardInput {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.46) 54.69%, rgba(0, 0, 0, 0.19) 100%);
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px 12px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+
+  & > h1 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: calc(100% - 2.4rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.46) 54.69%, rgba(0, 0, 0, 0.19) 100%);
+    padding: 0.5rem 1.2rem;
+    border-radius: 3px 12px 0px 0px;
+    margin: 0;
+    &::after {
+      content: "";
+      // background: "https://cdn.eltrane.cloud/3838384859/assets/icons/menu.webp');
+      background: url("https://cdn.eltrane.cloud/3838384859/assets/icons/menu.webp");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  & > input {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 4rem);
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    background: linear-gradient(0deg, rgba(88, 94, 99, 0.24) 0%, rgba(88, 94, 99, 0.24) 100%);
+    color: #fff;
+    padding: 0.5rem;
+  }
+}

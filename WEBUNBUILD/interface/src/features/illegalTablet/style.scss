@@ -1,0 +1,1442 @@
+.Tablette {
+	width: 1390px;
+	background: linear-gradient(180deg, #000000 0%, #232323 100%);
+	height: 930px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	& .bg {
+		width: 1856px;
+		height: 1260px;
+		position: absolute;
+		left: 50%;
+		top: 51.5%;
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		z-index: 10;
+	}
+	& .Error {
+		width: 500px;
+		height: auto;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 1;
+		background: linear-gradient(180deg, #000000 0%, #232323 100%);
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-direction: column;
+		transform: translate(-50%, -50%);
+		border-radius: 10px;
+		& .Message {
+			color: white;
+			text-align: center;
+			padding: 20px;
+			margin: 30px;
+			margin-bottom: 0;
+		}
+		& .Submit {
+			margin: 20px auto;
+		}
+	}
+	& .Header {
+		display: flex;
+		height: 100px;
+		padding: 30px 50px;
+		& .Buttons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 15px;
+			& .Span {
+				font-family: "Lato";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 29px;
+				/* identical to box height */
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #ffffff;
+			}
+			& .Container {
+				width: fit-content;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			& .Logo {
+				cursor: pointer;
+				width: 60px;
+				height: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 100px;
+				outline: #2a2a2a 2px solid;
+				& img {
+					width: 19px;
+				}
+			}
+		}
+		& .Profile {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: auto;
+			& .Container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: end;
+				& .Name {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 26px;
+					line-height: 31px;
+					display: flex;
+					align-items: center;
+					text-align: right;
+					color: #ffffff;
+				}
+				& .Desc {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 19px;
+					line-height: 23px;
+					display: flex;
+					align-items: center;
+					text-align: right;
+					color: #ffffff;
+				}
+			}
+			& .Logo {
+				width: 60px;
+				height: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 100px;
+				outline: #2a2a2a 2px solid;
+				margin-left: 10px;
+				font-family: "Lato";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 32px;
+				line-height: 39px;
+				display: flex;
+				align-items: center;
+				text-align: right;
+				color: #ffffff;
+			}
+		}
+	}
+	&.Login,
+	&.Logout {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		& .span {
+			font-family: "montserrat";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 30px;
+			height: 40px;
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #ffffff;
+		}
+		& .DigitalPrint {
+			margin: 0 auto;
+			margin-top: 20%;
+			position: relative;
+			&::before {
+				content: "";
+				width: 0px;
+				height: 10px;
+				box-shadow: #ffffff 0 0 60px 10px;
+				position: absolute;
+				animation: alternate loginEmpreinteWhite linear infinite 1s;
+				left: 49%;
+				top: 45%;
+			}
+			svg {
+				width: 140px;
+				height: 140px;
+			}
+			&.yellow {
+				&::before {
+					animation: none;
+					box-shadow: #b39203 0 0 60px 20px;
+				}
+				& * {
+					fill: #b39203;
+				}
+			}
+		}
+		& .progressBar {
+			width: 300px;
+			height: 3px;
+			background-color: white;
+			border-radius: 6px;
+			margin-top: 20%;
+			& .track {
+				animation: loginProgressBar 3s linear forwards;
+				background: linear-gradient(180deg, #bd8d00 0%, #f6c903 100%);
+				height: 100%;
+				width: 0px;
+			}
+		}
+		& .checkmark {
+			width: 40px;
+			margin-top: 20%;
+			& img {
+				width: 100%;
+			}
+		}
+	}
+	&.Main {
+		display: flex;
+		flex-direction: column;
+		& .Content {
+			padding: 0 60px;
+			display: flex;
+			flex-wrap: wrap;
+			& .Informations {
+				background: rgba(33, 33, 33, 0.2);
+				box-shadow: 0px 6.71176px 26.847px rgba(0, 0, 0, 0.3);
+				border-radius: 25px;
+				width: 600px;
+				height: 350px;
+				padding: 20px 23px;
+				box-sizing: border-box;
+				& .Up {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					& .Logo {
+						width: 65px;
+						height: 65px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						border-radius: 100px;
+						border: #2a2a2a 2px solid;
+						outline: #111111 5px solid;
+						font-family: "Lato";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 32px;
+						line-height: 39px;
+						display: flex;
+						align-items: center;
+						text-align: right;
+						position: relative;
+						color: #ffffff;
+						background: linear-gradient(319.46deg, #141414 14%, #292929 87.09%),
+							linear-gradient(324.74deg, rgba(27, 27, 27, 0.4) 13.3%, rgba(49, 49, 49, 0.4) 86.1%);
+						& img {
+							width: 26px;
+						}
+						&::before {
+							content: "";
+							width: calc(100% + 4px);
+							height: calc(100% + 4px);
+							border-radius: 100%;
+							border: 1px solid black;
+							position: absolute;
+							left: -3px;
+							top: -3px;
+						}
+					}
+					& .Span {
+						font-family: "Lato";
+						font-style: normal;
+						font-weight: 700;
+						font-size: 27.2727px;
+						line-height: 33px;
+						/* identical to box height */
+						margin-left: 10px;
+						display: flex;
+						align-items: center;
+						color: #ffffff;
+					}
+					& .Motto {
+						font-family: "Lato";
+						font-style: italic;
+						font-weight: 400;
+						font-size: 16.6666px;
+						line-height: 20px;
+						/* identical to box height */
+						margin-left: auto;
+						display: flex;
+						align-items: center;
+						text-align: right;
+						color: #ffffff;
+					}
+				}
+				& .Infos {
+					display: flex;
+					align-items: center;
+					text-align: center;
+					margin-top: 10px;
+					& .Span {
+						font-family: "Lato";
+						font-style: normal;
+						font-weight: 700;
+						font-size: 17.3939px;
+						line-height: 21px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						color: #ffffff;
+					}
+					& .Bar {
+						height: 2px;
+						background-color: rgba(255, 255, 255, 0.8);
+						width: 400px;
+						margin-left: auto;
+					}
+				}
+				& .InfosContainer {
+					margin-top: 10px;
+					flex-direction: column;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 18.0336px;
+					line-height: 22px;
+					/* identical to box height */
+					display: flex;
+					align-items: start;
+					color: #ffffff;
+					& .Name {
+						display: flex;
+						& .Span {
+							margin-left: 5px;
+							font-weight: 300;
+							color: #f6c903;
+							font-style: italic;
+						}
+					}
+				}
+			}
+			& .Commandes {
+				background: rgba(33, 33, 33, 0.2);
+				box-shadow: 0px 6.71176px 26.847px rgba(0, 0, 0, 0.3);
+				border-radius: 25px;
+				width: 600px;
+				height: 350px;
+				padding: 20px 23px;
+				margin-left: auto;
+				box-sizing: border-box;
+				display: flex;
+				padding-right: 0px;
+				& .Logo {
+					width: 65px;
+					height: 65px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 100px;
+					border: #2a2a2a 2px solid;
+					outline: #111111 5px solid;
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 32px;
+					background: linear-gradient(319.46deg, #141414 14%, #292929 87.09%),
+						linear-gradient(324.74deg, rgba(27, 27, 27, 0.4) 13.3%, rgba(49, 49, 49, 0.4) 86.1%);
+					line-height: 39px;
+					display: flex;
+					align-items: center;
+					text-align: right;
+					position: relative;
+					color: #ffffff;
+					& img {
+						width: 26px;
+					}
+					&::before {
+						content: "";
+						width: calc(100% + 4px);
+						height: calc(100% + 4px);
+						border-radius: 100%;
+						border: 1px solid black;
+						position: absolute;
+						left: -3px;
+						top: -3px;
+					}
+					& .Notification {
+						position: absolute;
+						width: 17.77px;
+						height: 17.77px;
+						background: linear-gradient(88.33deg, #fece03 -7.64%, #ebbf02 145.94%);
+						box-shadow: 0px 0px 8.12917px rgba(137, 117, 27, 0.5);
+						border-radius: 9.755px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						font-family:
+							system-ui,
+							-apple-system,
+							BlinkMacSystemFont,
+							"Segoe UI",
+							Roboto,
+							Oxygen,
+							Ubuntu,
+							Cantarell,
+							"Open Sans",
+							"Helvetica Neue",
+							sans-serif !important;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 13.0067px;
+						line-height: 15px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						justify-content: center;
+						color: #000000;
+					}
+				}
+				& .Container {
+					display: flex;
+					flex-direction: column;
+					width: 495px;
+					& .Title {
+						font-family: "montserrat";
+						font-style: normal;
+						font-weight: 500;
+						font-size: 17.4851px;
+						line-height: 26px;
+						display: flex;
+						align-items: center;
+						margin-top: 20px;
+						margin-left: 10px;
+						color: #ffffff;
+					}
+					& .CommandeList {
+						display: flex;
+						flex-direction: column;
+						max-height: 300px;
+						overflow-y: scroll;
+						margin-top: 20px;
+						gap: 10px;
+						padding-left: 12px;
+						/* width */
+						&::-webkit-scrollbar {
+							width: 5px;
+							border-radius: 3px;
+							overflow: hidden;
+						}
+						/* Track */
+						&::-webkit-scrollbar-track {
+							border-radius: 3px;
+							background: #151515;
+						}
+						/* Handle */
+						&::-webkit-scrollbar-thumb {
+							border-radius: 3px;
+							background: #dad7d7;
+						}
+						& .CommandeContainer {
+							background: rgba(255, 255, 255, 0.1);
+							border-radius: 13.0073px;
+							width: 450px;
+							max-height: fit-content;
+							min-height: fit-content;
+							height: fit-content;
+						}
+						& .Commande {
+							padding-bottom: 10px;
+							height: fit-content;
+							border-radius: 10px;
+							& .Up {
+								display: flex;
+								align-items: center;
+								padding: 0px 20px 5px 10px;
+								& .Date {
+									font-family: "montserrat";
+									font-style: normal;
+									font-weight: 300;
+									font-size: 20.3558px;
+									line-height: 31px;
+									/* identical to box height */
+									display: flex;
+									align-items: center;
+									color: #ffffff;
+								}
+								& .Additional {
+									font-family: "montserrat";
+									font-style: normal;
+									font-weight: 400;
+									font-size: 13.7343px;
+									line-height: 17px;
+									margin-left: 7px;
+									/* identical to box height, or 127% */
+									display: flex;
+									align-items: center;
+									color: #606060;
+								}
+								& .Price {
+									font-family: "Lato";
+									font-style: normal;
+									font-weight: 700;
+									font-size: 10.9147px;
+									line-height: 10px;
+									/* identical to box height, or 95% */
+									margin-left: auto;
+									display: flex;
+									align-items: center;
+									text-align: right;
+									color: #fbbc04;
+								}
+							}
+							& .Item {
+								font-family: "Lato";
+								font-style: normal;
+								font-weight: 700;
+								font-size: 13.4668px;
+								line-height: 13px;
+								/* identical to box height, or 95% */
+								display: flex;
+								align-items: center;
+								text-align: right;
+								color: #ffffff;
+							}
+							& .Items {
+								padding: 0 10px;
+								display: flex;
+								flex-wrap: wrap;
+								gap: 6px;
+								max-height: fit-content;
+								min-height: fit-content;
+								height: fit-content;
+							}
+						}
+					}
+				}
+			}
+			& .CrewRank {
+				background: rgba(33, 33, 33, 0.2);
+				box-shadow: 0px 6.71176px 26.847px rgba(0, 0, 0, 0.3);
+				border-radius: 25px;
+				width: 1300px;
+				height: 370px;
+				padding: 20px 23px;
+				box-sizing: border-box;
+				margin-top: 30px;
+				display: flex;
+				position: relative;
+				& .Logo {
+					width: 65px;
+					height: 65px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 100px;
+					border: #2a2a2a 2px solid;
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 32px;
+					background: linear-gradient(319.46deg, #141414 14%, #292929 87.09%),
+						linear-gradient(324.74deg, rgba(27, 27, 27, 0.4) 13.3%, rgba(49, 49, 49, 0.4) 86.1%);
+					line-height: 39px;
+					display: flex;
+					align-items: center;
+					text-align: right;
+					position: relative;
+					color: #ffffff;
+					& img {
+						width: 26px;
+					}
+					&::before {
+						content: "";
+						width: calc(100% + 4px);
+						height: calc(100% + 4px);
+						border-radius: 100%;
+						border: 1px solid rgb(72, 72, 72);
+						position: absolute;
+						left: -3px;
+						top: -3px;
+					}
+				}
+				& .CrewGeneral {
+					display: flex;
+					& .Span {
+						margin-left: 10px;
+						margin-top: 10px;
+						font-family: "montserrat";
+						font-style: normal;
+						font-weight: 500;
+						font-size: 17.4851px;
+						line-height: 26px;
+						align-items: center;
+						color: #ffffff;
+						& .SubSpan {
+							font-family: "montserrat";
+							font-style: normal;
+							font-weight: 400;
+							font-size: 15px;
+							line-height: 20px;
+							display: flex;
+							align-items: center;
+							color: #ffffff;
+						}
+					}
+				}
+				& .CrewLevels {
+					display: flex;
+					gap: 70px;
+					position: absolute;
+					bottom: 50px;
+					width: 100%;
+					left: 0;
+					justify-content: center;
+
+					.letter {
+						display: flex;
+						position: relative;
+						width: 100%;
+						height: 70%;
+						margin-top: 15%;
+						justify-content: center;
+						align-items: center;
+						font-family: "montserrat";
+						font-style: normal;
+						font-weight: 700;
+						font-size: 70px;
+						background: linear-gradient(90deg, #FFFFFF 0%, #B7B7B7 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+					}
+					& .Level {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 32px;
+
+					}
+					& .Head {
+						background: rgba(33, 33, 33, 0.2);
+						box-shadow: 0px 3.0303px 12.1212px rgba(0, 0, 0, 0.3);
+						border-radius: 2.70894px;
+						width: 115.13px;
+						height: 39.73px;
+						font-family: "montserrat";
+						font-style: normal;
+						font-weight: 600;
+						font-size: 17.4851px;
+						line-height: 26px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: linear-gradient(180deg, #ffffff 0%, #828282 100%);
+						-webkit-background-clip: text;
+						-webkit-text-fill-color: transparent;
+						background-clip: text;
+						text-fill-color: transparent;
+
+						&.yellow {
+							/* background: linear-gradient(180deg, #FBBC04 0%, #AA7F00 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent; */
+							font-style: normal;
+							font-weight: 700;
+							line-height: normal;
+							background: linear-gradient(180deg, #fbc504 0%, #fb9d04 100%);
+							background-clip: text;
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
+						}
+					}
+					& .Body {
+						background: rgba(33, 33, 33, 0.2);
+						box-shadow: 0px 3.0303px 12.1212px rgba(0, 0, 0, 0.3);
+						border-radius: 2.70894px;
+						width: 156.67px;
+						height: 145.83px;
+						display: flex;
+						justify-content: center;
+						align-content: center;
+						flex-direction: column;
+						&.yellow {
+							& .Span {
+								background: linear-gradient(180deg, #fbbc04 0%, #f89427 0.01%, #fbbc04 100%);
+								-webkit-background-clip: text;
+								-webkit-text-fill-color: transparent;
+								background-clip: text;
+								text-fill-color: transparent;
+								font-weight: 600;
+							}
+
+							& .letter {
+								background: linear-gradient(180deg, #fbbc04 0%, #f89427 0.01%, #fbbc04 100%);
+								-webkit-background-clip: text;
+								-webkit-text-fill-color: transparent;
+								background-clip: text;
+								text-fill-color: transparent;
+								font-weight: 600;
+							}
+
+							& .Svg * {
+								fill: url(#high);
+							}
+						}
+						& .Svg {
+							align-items: center;
+							justify-content: center;
+							display: flex;
+							& * {
+								fill: url(#initial);
+							}
+						}
+						& .Span {
+							position: absolute;
+							margin-top: 6.5%;
+							margin-left: 4.1%;
+							font-family: "montserrat";
+							font-style: normal;
+							font-weight: 500;
+							font-size: 13.5447px;
+							line-height: 20px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							color: white;
+							transform: translateY(10px);
+						}
+					}
+				}
+			}
+		}
+	}
+	&.Shop {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		& .Content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			& .Title {
+				font-family: "Lato";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 20.665px;
+				line-height: 25px;
+				/* identical to box height */
+				display: flex;
+				align-items: center;
+				color: white;
+				& .Yellow {
+					color: #f4c703;
+					margin-right: 5px;
+				}
+			}
+			& .Tabs {
+				display: flex;
+				background: #323232;
+				border-radius: 0px 7.43939px 7.43939px 0px;
+				margin-top: 20px;
+				width: 800px;
+				height: 35px;
+				border-radius: 5px;
+				overflow: hidden;
+				& .Tab {
+					width: 50%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 700;
+					font-size: 17.4534px;
+					line-height: 21px;
+					/* identical to box height */
+					color: white;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					&.Selected {
+						background-color: white;
+						color: black;
+					}
+				}
+			}
+			& .ShopContainer {
+				width: 800px;
+				height: 420px;
+				margin-top: 10px;
+				background: rgba(33, 33, 33, 0.1);
+				box-shadow: 0px 1.93927px 9.69633px rgba(0, 0, 0, 0.3);
+				border-radius: 38.7853px;
+				display: flex;
+				flex-direction: column;
+				padding-left: 100px;
+				padding-top: 20px;
+				box-sizing: border-box;
+				& .Title {
+					font-weight: 500;
+					font-size: 16px;
+					& .Yellow {
+						margin-left: 10px;
+					}
+				}
+				& .ItemList {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 25px;
+					max-height: 350px;
+					overflow: auto;
+					width: 660px;
+					margin-top: 10px;
+				}
+				& .Item {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					width: 130px;
+
+					.CrewLevel {
+						position: absolute;
+						top: 15%;
+						width: 20%;
+
+						.Level {
+							position: absolute;
+							display: flex;
+							top: 0;
+							right: 15%;
+
+							font-size: 1.5vh;
+							font-weight: 700;
+							background: linear-gradient(180deg, #fbc504 0%, #fb9d04 100%);
+							background-clip: text;
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
+
+						}
+					}
+					&.Arme {
+						width: 90%;
+						flex-direction: row;
+						& .Visual {
+							width: 450px;
+							height: 130px;
+							background: #3d3d3d;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+						}
+						
+						& .Input {
+							width: 180px;
+							padding-left: 20px;
+							flex-direction: column;
+							justify-content: start;
+							align-items: start;
+							box-sizing: border-box;
+							height: 100%;
+							justify-content: space-between;
+							& .Name {
+								font-family: "Lato";
+								font-style: normal;
+								font-weight: 400;
+								font-size: 13px;
+								line-height: 21px;
+								/* identical to box height */
+								display: flex;
+								align-items: center;
+								color: #ffffff;
+							}
+							& .Stock {
+								font-family: "Lato";
+								font-style: normal;
+								font-weight: 400;
+								margin-top: 5px;
+								font-size: 13px;
+								/* identical to box height */
+								display: flex;
+								align-items: center;
+								color: #ffffff;
+								& .Yellow {
+									margin-left: 5px;
+									color: #fbbc04;
+								}
+							}
+							& .Price {
+								margin-left: 0;
+								font-size: 13px;
+								margin-top: 10px;
+							}
+							& .InputContainer {
+								display: flex;
+								align-items: center;
+								transform: translate(-6px);
+							}
+							& .Button {
+								font-size: 25px !important;
+							}
+							& input {
+								width: 50px;
+								height: 20px;
+							}
+						}
+						& .OOS {
+							width: 180px;
+							height: 100%;
+							display: flex;
+							justify-content: center;
+							flex-direction: column;
+							padding-left: 20px;
+							box-sizing: border-box;
+							& .Main {
+								font-family: "Lato";
+								font-style: normal;
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 21px;
+								/* identical to box height */
+								display: flex;
+								align-items: center;
+								color: #ffffff;
+							}
+							& .Duration {
+								font-family: "Lato";
+								font-style: normal;
+								font-weight: 400;
+								font-size: 14px;
+								line-height: 21px;
+								/* identical to box height */
+								display: flex;
+								align-items: center;
+								color: #fbbc04;
+							}
+						}
+					}
+					& .Visual {
+						width: 130px;
+						height: 130px;
+						border-radius: 6px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						color: white;
+						font-size: 12px;
+						font-family: "Lato";
+						font-style: normal;
+						font-weight: 400;
+						font-size: 10.666px;
+						line-height: 13px;
+						display: flex;
+						align-items: center;
+						text-align: center;
+						background: rgba(29, 29, 29, 0.5);
+						border-radius: 7.75706px;
+						& img {
+							width: 80px;
+							margin-top: 5px;
+						}
+						& .Name {
+							margin-top: 5px;
+						}
+					}
+					& .Input {
+						display: flex;
+						width: 100%;
+						align-items: center;
+						& .Price {
+							font-family: "Lato";
+							font-style: normal;
+							font-weight: 400;
+							font-size: 10.666px;
+							line-height: 13px;
+							/* identical to box height */
+							margin-left: auto;
+							margin-right: 10px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							color: #ffffff;
+						}
+						& .Button {
+							font-family: "montserrat";
+							font-style: normal;
+							font-weight: 275;
+							font-size: 23px;
+							line-height: 34px;
+							/* identical to box height */
+							color: white;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							margin: 0 5px;
+							cursor: pointer;
+						}
+						& input {
+							width: 36.2px;
+							height: 13.57px;
+							background: rgba(44, 44, 44, 0.4);
+							border-radius: 3.39372px;
+							border: none;
+							color: white;
+							text-align: end;
+							padding-right: 7px;
+							box-sizing: border-box;
+							font-size: 12px;
+							&:focus {
+								outline: none;
+							}
+						}
+					}
+				}
+			}
+			& .CheckOut {
+				width: 800px;
+				height: 130px;
+				margin-top: 20px;
+				background: rgba(33, 33, 33, 0.1);
+				box-shadow: 0px 1.93927px 9.69633px rgba(0, 0, 0, 0.3);
+				border-radius: 38.7853px;
+				position: relative;
+				& .CheckOutList {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 15.0174px;
+					line-height: 18px;
+					display: flex;
+					color: #ffffff;
+					display: flex;
+					flex-direction: column;
+					padding-left: 60px;
+					margin-top: 20px;
+					box-sizing: border-box;
+					max-height: 70px;
+					overflow: auto;
+					width: 760px;
+				}
+				& .TotalPrice {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 900;
+					font-size: 18.7717px;
+					line-height: 23px;
+					/* identical to box height */
+					display: flex;
+					align-items: center;
+					text-align: right;
+					color: #fbbc04;
+					position: absolute;
+					bottom: 10px;
+					right: 30px;
+					text-align: end;
+				}
+			}
+			& .Submit {
+				background: #2c2c2c;
+				box-shadow: 0px 2.5029px 12.5145px rgba(0, 0, 0, 0.3);
+				border-radius: 10.0116px;
+				width: 246.31px;
+				height: 34.9px;
+				font-family: "Lato";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12.399px;
+				line-height: 15px;
+				/* identical to box height */
+				align-items: center;
+				justify-content: center;
+				margin-top: 40px;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				color: #ffffff;
+				&.Disabled {
+					color: #ffffff56;
+					background: #1d1d1d;
+					pointer-events: none;
+				}
+			}
+			& .ChoseTime,
+			& .Ordered {
+				width: 100%;
+				height: 930px;
+				top: 0px;
+				position: absolute;
+				background: linear-gradient(180deg, #000000 0%, #232323 100%);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				& .Title {
+					font-family: "montserrat";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 24.1682px;
+					line-height: 36px;
+					/* identical to box height */
+					margin-top: 80px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: #ffffff;
+				}
+				& .CurrDate {
+					margin-top: 90px;
+					font-family: "montserrat";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 22.5363px;
+					line-height: 34px;
+					/* identical to box height */
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: #d2d2d2;
+				}
+				& .Horloge {
+					width: 285px;
+					height: 285px;
+					margin-top: 20px;
+					position: relative;
+					& img {
+						width: 100%;
+					}
+					& .Centre {
+						width: 9px;
+						height: 9px;
+						position: absolute;
+						background-color: #302f2f;
+						border-radius: 100%;
+						border: 3px solid black;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+					}
+					& .Heures,
+					& .Minutes,
+					& .Secondes {
+						width: 5px;
+						height: 50%;
+						position: absolute;
+						top: 0;
+						left: calc(50% - 2.5px);
+						transform-origin: bottom center;
+						bottom: 50%;
+						display: flex;
+						align-items: end;
+						justify-content: center;
+						transition: 0.3s;
+					}
+					& .Aiguille {
+						background-color: white;
+						border-radius: 3px 3px 0 0;
+						height: 85px;
+						width: 100%;
+						margin-bottom: 12px;
+					}
+					& .Secondes {
+						animation: rotation 65s linear infinite;
+					}
+				}
+				& .HourPicker {
+					font-family: "montserrat";
+					font-style: normal;
+					font-weight: 250;
+					font-size: 65px;
+					line-height: 122px;
+					/* identical to box height */
+					display: flex;
+					align-items: center;
+					text-align: center;
+					margin-top: 20px;
+					position: relative;
+					color: #ffffff;
+				}
+				& .CH {
+					position: absolute;
+					font-family: "montserrat";
+					font-style: normal;
+					font-weight: 250;
+					font-size: 27.3418px;
+					line-height: 41px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: #d7d7d7;
+					cursor: pointer;
+				}
+				& .Message {
+					display: flex;
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 20.5063px;
+					line-height: 25px;
+					display: flex;
+					align-items: center;
+					color: #ffffff;
+					margin-bottom: 40px;
+					& .key {
+						background: #ffffff;
+						box-shadow: 0px 5.46836px 5.46836px rgba(0, 0, 0, 0.25);
+						border-radius: 4.10127px;
+						color: black;
+						padding: 0 5px;
+						font-weight: 600;
+						margin: 0 5px;
+					}
+					& .yellow {
+						color: #fbbc04;
+						font-weight: 600;
+						margin: 0 5px;
+					}
+				}
+			}
+			& .Ordered {
+				background: url("https://cdn.eltrane.cloud/3838384859/assets/tabletteIllegale/ordered_bg.webp"), black;
+				& .Map {
+					margin-top: 85px;
+					overflow: hidden;
+					border-radius: 25px;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				& .Jalon {
+					position: absolute;
+					z-index: 1;
+					left: 480px;
+					top: 100px;
+				}
+				& .Origin {
+					position: absolute;
+					z-index: 1;
+					left: 710px;
+					width: 20px;
+					height: 20px;
+					bottom: 73px;
+					background: #f2c503;
+					border: 4.83363px solid black;
+					border-radius: 96.6726px;
+				}
+				& svg {
+					position: absolute;
+					left: 620px;
+					bottom: 95px;
+					animation: path 1s forwards;
+					stroke-dashoffset: -480;
+					stroke-dasharray: 500;
+				}
+			}
+		}
+	}
+	&.Logout {
+		svg {
+			stroke-dasharray: 100;
+			stroke-dashoffset: 10;
+		}
+	}
+	& .inser::after {
+		content: "";
+		background-color: white;
+		width: 10px;
+		height: 60%;
+		margin-left: 3px;
+		transform: translateY(1px);
+		animation: clignote 1.2s infinite linear;
+	}
+
+	.A-SlideIn {
+		-webkit-animation: slide-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+		animation: slide-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+	
+	.A-SlideInBottom {
+		animation: slide-in-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	}
+	
+	.A-BounceIn {
+		animation-name: bounceIn;
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+		animation-timing-function: linear;
+	}
+	
+	.A-FadeInRight {
+		animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+	}
+	
+	.A-ScaleUp {
+		animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+	}
+	
+	.A-FadeIn {
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+	}
+}
+
+@keyframes clignote {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	51% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes loginProgressBar {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+@keyframes loginEmpreinteWhite {
+	to {
+		box-shadow: #ffffff 0 0 80px 20px;
+	}
+}
+
+@-webkit-keyframes slide-in {
+	0% {
+		-webkit-transform: translateZ(-1400px);
+		transform: translateZ(-1400px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		-webkit-transform: translateZ(-1400px);
+		transform: translateZ(-1400px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-bottom {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in-top {
+	0% {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes bounceIn {
+	0% {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes fade-in-right {
+	0% {
+		-webkit-transform: translateX(50px);
+		transform: translateX(50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes scale-up-center {
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes path {
+	from {
+		stroke-dashoffset: -480;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}

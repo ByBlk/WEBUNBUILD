@@ -1,0 +1,83 @@
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  min-height: 10%;
+
+
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgb(18, 18, 18, .65) 0%, rgb(0, 0, 0, .65) 100%);
+  border-radius: .1vw .1vw .1vw .1vw;
+  position: relative;
+
+  overflow-x: hidden;
+
+  &:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+
+  span {
+    color: rgba(255, 255, 255);
+    font-size: 13.5px;
+    font-weight: lighter;
+    font-family: "montserrat", sans-serif;
+  }
+
+  &:hover {
+    background: linear-gradient(to bottom, rgba(94, 108, 182, .7), rgba(41, 47, 80, .7));
+  }
+
+  .itemsContextMenu {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    width: 125px;
+    z-index: 10;
+
+    .itemContextMenu {
+      background: rgb(94,108,182);
+      background: linear-gradient(0deg, rgba(94,108,182,0.3) 0%, rgba(41,47,80,0.3) 100%);
+      display: flex;
+      gap: 2px;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 3px;
+
+      &:hover {
+        background: rgb(94,108,182);
+        background: linear-gradient(0deg, rgba(94,108,182,0.5) 0%, rgba(41,47,80,0.5) 100%);
+      }
+
+      .itemContextMenuText {
+        font-family: "montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: lighter;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .itemContextMenuIcon {
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 37%, rgba(1,1,1,0.2) 69%, rgba(3,3,3,0.2) 100%);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+
+      }
+
+    }
+  }
+}

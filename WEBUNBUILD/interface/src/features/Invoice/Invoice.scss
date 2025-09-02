@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+#invoice__container {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 33.18vw;
+  height: 64.72vh;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+
+  p, h1, h2 {
+    margin: 0;
+  }
+
+  .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+
+    .invoice__header {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 4.17vh;
+
+      .invoice__title {
+        h1 {
+          font-size: 2.78vh;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 0.93vh;
+        }
+
+        h2 {
+          font-size: 1.63vh;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+
+      .header__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.52vh;
+        width: 14.13vw;
+
+        .header__info__group {
+          display: flex;
+          justify-content: space-between;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30) 100%, rgba(15, 15, 15, 0.30) 100%);
+          font-weight: 400;
+          padding: 0.74vh 1.04vw;
+
+          .label {
+            font-size: 0.58vw;
+          }
+
+          .text {
+            font-size: 0.58vw;
+          }
+        }
+      }
+    }
+
+    .invoice__body {
+      width: 26.98vw;
+      margin: auto;
+
+      .invoice__footer {
+        margin: 1.35vh auto 0 auto;
+        width: 22.19vw;
+
+        .invoice__total {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+
+          .remise {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1.33vh;
+
+            .remise__input {
+
+              input {
+                width: 20px;
+                padding: 0;
+                border: none;
+                background: transparent;
+                font-size: 1.2vh;
+                font-weight: 500;
+                text-align: right;
+                color: #fff;
+              }
+            }
+          }
+
+          .total {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 1.56vh;
+
+            p {
+              color: rgba(56, 220, 102, 1);
+              font-weight: 600;
+            }
+          }
+        }
+
+        .invoice__payment {
+          margin: 1.5vh auto 3.17vh auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .title__payment {
+            font-size: 1.3vh;
+            margin-bottom: 1.5vh;
+          }
+
+          .invoice_payment__group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.52vh;
+
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 11.3vw;
+              height: 3.43vh;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30) 100%, rgba(15, 15, 15, 0.30) 100%);
+
+              &:hover, .selected {
+                background: linear-gradient(to bottom, rgba(94, 108, 182, 0.5) 0%, rgba(94, 108, 182, 0.5) 100%);
+              }
+
+              p {
+                font-size: 1.11vh;
+              }
+            }
+          }
+
+          .invoice_payment__group__sender {
+            width: 100%;
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 3.43vh;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30) 100%, rgba(15, 15, 15, 0.30) 100%);
+
+              p {
+                width: 100%;
+                font-size: 1.11vh;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .invoice__signature {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 2vw;
+
+          .signature {
+            font-size: 3.24vh;
+            font-weight: 400;
+            font-family: "Mrs Saint Delafield", cursive;
+
+             &:after {
+              content: "";
+              display: block;
+              width: 80%;
+              height: 0.09vh;
+              background-color: #fff;
+              margin: -0.5vh auto 0 auto;
+            }
+          }
+
+          .payment__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(51, 150, 60, 0.35) 100%, rgba(56, 220, 102, 0.35) 100%);
+            height: 3.43vh;
+            width: 11.3vw;
+
+             p {
+               font-family: Montserrat, sans-serif;
+               font-size: 1.11vh;
+               font-weight: 400;
+             }
+
+            &:hover {
+              background: linear-gradient(to bottom, rgba(56, 220, 102, 0.5) 0%, rgba(56, 220, 102, 0.5) 100%);
+            }
+          }
+        }
+
+        .invoice__check {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1vh;
+          position: absolute;
+          bottom: 5.56vh;
+          right: 3.54vw;
+
+          p {
+            font-size: 1.11vh;
+          }
+
+          .checkbox__recu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.43vh;
+            width: 2.03vw;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.30) 100%, rgba(15, 15, 15, 0.30) 100%);
+          }
+        }
+      }
+    }
+
+
+    &.bg-1 {
+      transform: rotate(1.99deg);
+      background-color: rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.bg-2 {
+      transform: rotate(-1.91deg);
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 0;
+    }
+  }
+
+  .line {
+    margin: 3.42vh auto 0 auto;
+    height: 0.09vh;
+    width: 22.19vw;
+    background-color: #fff;
+  }
+
+  .line2 {
+    margin: 2vh auto 0 auto;
+    height: 0.09vh;
+    width: 22.19vw;
+    background-color: #fff;
+  }
+}

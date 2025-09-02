@@ -1,0 +1,113 @@
+.MenuPlaque {
+	position: relative;
+	height: 55.556vh;
+	width: 32.292vw;
+	left: 2.604vw;
+	top: 4.63vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .5), rgba(19, 19, 19, 0.4));
+	border-radius: 0.833vh;
+
+	.MenuPlaque_banner {
+		width: 100%;
+		height: 11.111vh;
+		img {
+			height: 11.111vh;
+			width: 100%;
+		}
+	}
+
+	.MenuPlaque_title {
+		background: rgba(0, 0, 0, 0.2);
+		font-family: "Montserrat", serif;
+		height: 4.815vh;
+		align-content: center;
+
+		p {
+			font-weight: 400;
+			font-size: 1.296vh;
+			line-height: 100%;
+			letter-spacing: 0;
+			text-align: center;
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+
+	.MenuPlaque_preview {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-top: 2.407vh;
+
+		img {
+			width: 20vw;
+			height: 19.444vh;
+		}
+
+		.text-preview {
+			position: absolute;
+			font-size: 4.296vh;
+			font-weight: bold;
+			color: #171e6c;
+			text-transform: uppercase;
+			margin: 0;
+			top: 48%;
+		}
+	}
+
+	.MenuPlaque_form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 3.611vh;
+		align-items: center;
+		gap: 3.611vh;
+
+		input[type="text"] {
+			background-color: rgba(0, 0, 0, 0.15);
+			border: none;
+			height: 3.796vh;
+			width: 17.708vw;
+			color: #fff;
+			font-size: 1.296vh;
+			box-shadow: none;
+			padding: 0 0.521vw;
+			border-radius: 0.833vh;
+			box-sizing: border-box;
+
+
+			&:focus {
+				outline: none;
+				border: 0.093vh solid rgba(255, 255, 255, 1);
+			}
+		}
+
+		.validate_button {
+			height: 3.796vh;
+			width: 18.229vw;
+			background: rgba(51, 150, 60, 1);
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			border-radius: 0.833vh;
+			transition: background 500ms;
+
+			p {
+				color: #fff;
+				text-align: center;
+				margin: 0;
+				font-size: 1.296vh;
+			}
+
+			&:hover {
+				background: rgb(74, 181, 84);
+				cursor: pointer;
+			}
+
+			&.disabled{
+				background: rgba(73, 80, 73, 0.5);
+				pointer-events: none;
+			}
+		}
+	}
+}

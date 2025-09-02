@@ -1,0 +1,208 @@
+#premium_interface {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  max-width: 79.17vw;
+  gap: 0.42vw;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+
+  p {
+    margin: 0;
+  }
+
+  .banner {
+    position: relative;
+    width: 19.48vw;
+    height: 60.74vh;
+    background-image: url("https://cdn.eltrane.cloud/3838384859/assets/premium/premium+.webp");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.55);
+    filter: grayscale(1);
+    transition: filter 0.3s ease-in-out;
+
+    &.plus {
+      background-image: url("https://cdn.eltrane.cloud/3838384859/assets/premium/premium.webp");
+    }
+
+    p {
+      position: absolute;
+      font-weight: 600;
+      font-size: 3.98vh;
+      bottom: 35px;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 800;
+        color: #FBB104;
+      }
+    }
+
+    &:hover {
+      filter: grayscale(0);
+      cursor: pointer;
+    }
+  }
+
+  .main_content {
+    width: 59.27vw;
+    height: 60.74vh;
+    background-image: url("https://cdn.eltrane.cloud/3838384859/assets/premium/bg_premium.webp");
+    background-color: rgba(0, 0, 0, 0.55);
+
+    .container {
+      padding: 3.7vh 2.08vw;
+
+      .title_container {
+        margin-bottom: 2.04vh;
+
+        .title {
+          font-size: 4.44vh;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 0.28vh;
+
+          span {
+            color: #FBB104;
+            font-size: 5.09vh;
+          }
+        }
+
+        .subtitle {
+          font-size: 1.5vh;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #FBB104;
+        }
+      }
+
+      .advantage_container {
+        display: flex;
+        flex-direction: row;
+        gap: 0.99vw;
+
+        .column_advantage {
+          display: flex;
+          flex-direction: column;
+          gap: 1.76vh;
+        }
+
+        .advantage {
+          width: 17.71vw;
+          height: 5.28vh;
+          background-color: rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            margin-left: 1.04vw;
+          }
+
+          .text {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+
+            p {
+              font-weight: 400;
+              font-size: 1.39vh;
+              text-transform: uppercase;
+
+              span {
+                font-weight: 800;
+              }
+            }
+          }
+
+          &:hover {
+            background: linear-gradient(to bottom, rgba(94, 108, 182, 0.62) 0%, rgba(94, 108, 182, 1) 99%);
+          }
+        }
+      }
+
+      .footer_container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.76vh;
+        gap: 1.76vh;
+
+        .info_footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 17.71vw;
+          height: 15.83vh;
+          background-color: rgba(0, 0, 0, 0.3);
+          text-transform: uppercase;
+          font-size: 1.39vh;
+
+          &.pink {
+            &:hover {
+              background: linear-gradient(to bottom, rgba(238, 56, 216, 0.6) 0%, rgba(169, 44, 154, 0.6) 100%);
+            }
+          }
+
+          &.yellow {
+            &:hover {
+              background: linear-gradient(to bottom, rgba(252, 207, 96, 0.6) 0%, rgba(255, 173, 0, 0.6) 100%);
+            }
+          }
+
+          span {
+            font-weight: 600;;
+          }
+        }
+
+        .sub_price {
+          width: 17.71vw;
+          height: 15.83vh;
+
+          .price {
+            height: 10.56vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: 3.75vh;
+
+            span {
+              color: #FBB104;
+            }
+          }
+        }
+
+        .btn_sub {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5.28vh;
+          font-size: 1.39vh;
+          font-weight: 400;
+          text-transform: uppercase;
+          background: linear-gradient(to bottom, rgba(30, 180, 90, 0.5) 0%, rgba(51, 150, 60, 0.5) 100%);
+          background-color: rgba(0, 0, 0, 0.3);
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          &:hover {
+            background: linear-gradient(to bottom, rgba(56, 220, 102, 0.5) 0%, rgba(56, 220, 102, 0.5) 100%);
+          }
+        }
+      }
+    }
+  }
+}

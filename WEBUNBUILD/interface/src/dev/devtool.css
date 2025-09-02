@@ -1,0 +1,133 @@
+.search-bar {
+    width: 100%;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    background: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    background: #444;
+    border-color: #555;
+}
+
+.search-bar::placeholder {
+    color: #bbb;
+    opacity: 1;
+}
+
+.drawer-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+}
+
+.drawer-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.drawer-search {
+    display: flex;
+    gap: 10px;
+}
+
+.position-btn {
+    padding: 6px 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.position-btn:hover {
+    background: #444;
+}
+
+.position-btn.active {
+    background: #555;
+}
+
+.position-toggle {
+    padding: 4px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.position-toggle:hover {
+    background: #444;
+}
+
+.position-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer-content {
+    padding: 20px;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.drawer-content button {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.drawer-content button:hover {
+    background: #3a3a3a;
+    border-color: #666;
+    transform: translateX(4px);
+}
+
+.drawer-content button:active {
+    background: #444;
+    transform: translateX(2px);
+}
+
+.drawer-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.drawer-content::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+.drawer-content::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.drawer-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

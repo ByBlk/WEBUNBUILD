@@ -1,0 +1,142 @@
+.MenuJob {
+	background: rgba(0, 0, 0, 0.55);
+	border-radius: 0px 0px 6px 6px;
+	margin: 50px 80px;
+	width: 480px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	.Body {
+		padding: 0 30px;
+	}
+
+	& .Header {
+		height: auto;
+		width: 100%;
+	}
+
+	.ChoiceLabel {
+		font-family: "Lato";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		color: #ffffff;
+		margin-bottom: 10px;
+	}
+
+	.Choices {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+
+		width: 100%;
+		margin-bottom: 60px;
+
+		img {
+			max-height: 80px;
+			width: auto;
+			margin-top: 20px;
+		}
+
+		.VisionMenu-item {
+			width: 120px;
+			height: 120px;
+			gap: 5px;
+		}
+	}
+
+	.Optional {
+		color: rgba(251, 188, 4);
+		font-style: italic;
+		font-weight: 300;
+		font-size: 10px;
+		display: flex;
+		margin-left: 10px;
+		align-items: center;
+	}
+
+	.Participants {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 0;
+		background: rgba(0, 0, 0, 0.5);
+		height: 100%;
+
+		margin-top: 40px;
+		padding: 15px 30px 30px 30px;
+
+		.ParticipantsLabel {
+			font-family: "Lato";
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			display: flex;
+			align-items: center;
+			color: #ffffff;
+		}
+
+		.ParticipantsList {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			gap: 5px;
+
+			.VisionMenu-item {
+				width: 100px;
+				height: 100px;
+
+				img {
+					width: 30px;
+					height: 30px;
+
+					margin: 0 auto;
+				}
+
+				.VisionMenu-name {
+					position: absolute;
+					bottom: 0;
+				}
+
+				.VisionMenu-RemovePlayer {
+					position: absolute;
+					top: 0;
+					right: 0;
+
+					& .button {
+						margin: 3px;
+						background: linear-gradient(180deg, rgba(253, 127, 127, 0.5) 0%, rgba(224, 31, 31, 0.5) 100%);
+						border: none;
+						border-radius: 5px;
+						width: 20px;
+						height: 20px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						cursor: pointer;
+						color: white;
+						font-family: "Montserrat";
+						font-size: 24px;
+						font-weight: 700;
+						text-align: center;
+					}
+				}
+
+				&.empty {
+					background: linear-gradient(
+						90deg,
+						rgba(105, 126, 238, 0.209375) 0%,
+						rgba(94, 108, 182, 0.3) 43.75%,
+						rgba(94, 108, 182, 0.3) 100%
+					);
+				}
+			}
+		}
+	}
+}

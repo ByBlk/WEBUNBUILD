@@ -1,0 +1,115 @@
+// Font 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+// General
+
+.title-section {
+    font-weight: 400;
+}
+
+.title-media {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.media-container {
+    height: 100vh;
+    width: 24%;
+    background: linear-gradient(90deg, rgba(33,33,33,0.6) 0%, rgba(0,0,0,0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+
+    p, label {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+// Banner
+
+.banner-container {
+    position: relative;
+    text-align: center;
+
+    p {
+        @extend .title-media;
+        color: #fff;
+        position: absolute;
+        margin: 0;
+        top: 18%;
+        left: 10%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// Media tabs
+
+.media-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.media-tab {
+    position: relative;
+    width: calc(100% / 3);
+    border: none;
+    padding: 4px 0;
+    background: none;
+    cursor: pointer;
+    font-weight: 400;
+
+    span {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.81) 100%, );
+        opacity: 20%;
+        inset: 0;
+        z-index: 10;
+    }
+
+    p {
+        position: relative;
+        z-index: 20;
+        text-align: center;
+    }
+
+    &:hover{
+        background: linear-gradient(180deg, rgba(94, 108, 182, 0.2) 0%, rgba(94, 108, 182, 0.5) 100%);
+        font-weight: 600;
+    }
+}
+
+.tab-active {
+    background: linear-gradient(180deg, rgba(94, 108, 182, 0.2) 0%, rgba(94, 108, 182, 0.5) 100%);
+    font-weight: 600;
+}
+
+// Main container
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+}
+
+// btn group footer 
+
+.btn-group-footer {
+    margin-top: 20px;
+}
+
+
+

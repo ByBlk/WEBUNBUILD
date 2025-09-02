@@ -1,0 +1,264 @@
+.recu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    
+    img {
+        width: 25vw;
+        height: 40.5vw;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .recuContainer {
+        position: absolute; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0%);
+        width: 20.5vw;
+        height: 37vw;
+        margin-top: -5%;
+
+        h1 {
+            font-size: 1.7vw;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5vw;
+        }
+
+        h2 {
+            font-size: 0.9vw;
+            color: white;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        .hr {
+            width: 80%;
+            height: .1vw;
+            background: white;
+            margin-top: 0.5vw;
+        }
+
+        .hre {
+            width: 80%;
+            height: 0.1vw;
+            background: white;
+            margin-top: 2.5vw;
+        }
+
+        .hree {
+            width: 70%;
+            height: 0.1vw;
+            background: white;
+            margin-top: 1vw;
+        }
+
+        .hreeee {
+            width: 70%;
+            height: 0.1vw;
+            background: white;
+            margin-top: 0.5vw;
+        }
+
+        .recuContainer__info {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 88%;
+            height: 10%;
+            gap: 0.5vw;
+            margin-top: 2.5vw;
+
+            .case {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 100%;
+                height: 50%;
+                border-radius: 2px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(15, 15, 15, 0.2) 100%);
+
+                .recu-case__title {
+                    font-size: 0.6vw;
+                    color: white;
+                    font-weight: 300;
+                    margin-left: 5%;
+                }
+
+                .recu-case__content {
+                    font-size: 0.6vw;
+                    color: white;
+                    font-weight: 300;
+                    margin-right: 5%;
+                }
+            }
+        }
+
+        .Desc {
+            font-size: 0.8vw;
+            color: white;
+            font-weight: 300;
+            margin-top: 0.8vw;
+        }
+
+        .recu-description_contain {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 17vw;
+            height: 30%;
+            overflow-y: auto;
+            gap: 0.6vw;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .recu-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                gap: 1%;
+                height: 20%;
+
+                .item-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex: 1;
+
+                    .item-title {
+                        font-size: 0.75vw;
+                        color: #ffffff;
+                        font-weight: 400;
+
+                        p {
+                            margin: 0; 
+                            line-height: 1.4;
+                        }
+
+                        span {
+                            font-size: 0.8vw;
+                            color: #f0f0f0;
+                            font-weight: 550;
+                        }
+
+                        .item-type {
+                            font-size: 0.7vw;
+                            color: #f0f0f0;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                .item-price {
+                    font-size: 0.9vw;
+                    color: #ffffff;
+                    font-weight: 550;
+                    text-align: right;
+                }
+            }
+        }
+
+        .recu-total {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 80%;
+            height: 10%;
+            gap: 0.5vw;
+
+            .Taxe {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 98%;
+                height: 50%;
+
+                .recu-total__title {
+                    font-size: 0.7vw;
+                    color: white;
+                    font-weight: 400;
+                }
+
+                .recu-total__content {
+                    font-size: 0.7vw;
+                    color: white;
+                    font-weight: 400;
+                }
+            }
+
+            .PMT {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 98%;
+                height: 50%;
+
+                .recu-total__title {
+                    font-size: 0.9vw;
+                    background: linear-gradient(180deg, rgb(56, 220, 102) 0%, rgb(43, 167, 78) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
+                }
+
+                .recu-total__content {
+                    font-size: 0.9vw;
+                    background: linear-gradient(180deg, rgb(56, 220, 102) 0%, rgb(43, 167, 78) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .recu-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            height: 5%;
+            line-height: 1.6;
+            margin-top: 1.5vw;
+
+            p {
+                font-size: 0.7vw;
+                color: white;
+                font-weight: 300;
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 0.9vw;
+                color: white;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+    }
+}

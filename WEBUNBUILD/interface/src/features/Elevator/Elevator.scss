@@ -1,0 +1,170 @@
+#elevator{
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    height: 60.37vh;
+    width: 8.854vw;
+    padding: 5.556vh 3.125vw;
+    background: url('https://media.discordapp.net/attachments/980005173718040586/1008155949556576297/Image_42x.webp?width=1014&height=676'), #969696;
+    border: 0.278vh solid #85827B;
+
+    @media screen and (min-width: 2060px) {
+        padding: 4vh 2vw;
+    }
+
+    .viewer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 11.574vh;
+        width: 100%;
+        margin-bottom: 3.426vh;
+
+        background: #21172B 0% 0% no-repeat padding-box;
+        border: 0.278vh solid #85827B;
+        color: #EE190D;
+
+        p {
+            font-family: ds-digib;
+            font-size: 9.259vh;
+            color: #EE190D;
+            z-index: 1;
+            text-shadow: 0 0 0.556vh #EE170E66;
+        }
+    }
+
+    .buttons {
+        height: 80%;
+        width: 8.438vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .button_floor_container {
+            display: flex;
+            flex-wrap: wrap;
+
+            .button_floor_box {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                margin: 0.741vh 0;
+
+            }
+        }
+
+        .button_bottom_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .button_utils_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1.852vh 0;
+                max-width: 8.542vw;
+                gap: 0 0.741vh;
+                @media screen and (max-width: 1200px)  {
+                    gap: 0.741vh;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .img_speech {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 7.407vh;
+            padding: 0.926vh 0.521vw;
+            width: calc(95% - 1.042vw);
+
+            img {
+                height: 8.333vh;
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3.704vh;
+            width: 2.083vw;
+            border-radius: 3.889vh;
+            color: #160D19;
+
+            background: #969696 0% 0% no-repeat padding-box;
+            box-shadow: 0 0 0.463vh #00000026;
+            border: 0.185vh solid #c9c9c9;
+
+            p {
+                text-align: center;
+                font-weight: normal;
+                font-family: Bahnschrift;
+                font-size: 1.852vh;
+                letter-spacing: 0;
+                opacity: 1;
+            }
+
+            img {
+                height: 1.62vh;
+            }
+
+            &:hover {
+                background: #fffdf8 0% 0% no-repeat padding-box;
+                box-shadow: 0 0 2.407vh #E0A244BD;
+                border: 0.185vh solid #E0A244;
+                color: #E0A244;
+                cursor: pointer;
+            }
+
+            @media (max-width: 1024px) {
+                height: 3vh;
+                width: 3vh;
+                border-radius: 50%;
+                p {
+                    font-size: 1.5vh;
+                }
+                img {
+                    height: 1.4vh;
+                }
+            }
+
+            @media (min-width: 1025px) and (max-width: 1440px) {
+                height: 3.5vh;
+                width: 3.5vh;
+                border-radius: 50%;
+                p {
+                    font-size: 1.7vh;
+                }
+                img {
+                    height: 1.5vh;
+                }
+            }
+
+            @media (min-width: 1441px) {
+                height: 3.704vh;
+                width: 3.704vh;
+                border-radius: 50%;
+                p {
+                    font-size: 1.852vh;
+                }
+                img {
+                    height: 1.62vh;
+                }
+            }
+        }
+
+        .active {
+            background: #fffdf8 0% 0% no-repeat padding-box;
+            box-shadow: 0 0 2.407vh #E0A244BD;
+            color: #E0A244;
+            border: 0.185vh solid #E0A244;
+        }
+    }
+}
+

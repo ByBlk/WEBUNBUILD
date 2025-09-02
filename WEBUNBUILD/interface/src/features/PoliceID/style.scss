@@ -1,0 +1,151 @@
+.PoliceID {
+    width: 500px;
+    margin: 100px;
+    position: relative;
+
+    & .Background {
+        width: 70%;
+    }
+
+    & .photo {
+        position: absolute;
+        left: 170px;
+        top: 90px;
+        height: 90px;
+		width: 70px;
+		border: 1px solid black;
+
+		background-size: cover;
+		background-position: center;
+
+		
+		&.lssd {
+			background-color: rgba(#7a5220, .5);
+		}
+	
+		&.usss {
+			background-color: rgba(#000000, .5);
+		}
+	
+		&.lspd {
+			background-color: rgba(#003663, .5);
+		}
+    }
+
+	& .item-container {
+		text-align: center;
+		color: #000;
+		font-style: normal;
+		line-height: normal;
+
+		& .fullname {
+			position: absolute;
+			left: 145px;
+			top: 65px;
+			width: 175px;
+			height: 20px;
+			line-height: 20px;
+			font-weight: 600;
+			
+			text-transform: uppercase;
+			font-family: "Markazi Text";
+		}
+
+		$startingX : 230px;
+		$width: 98px;
+		
+		& .matricule {
+			position: absolute;
+			left: $startingX;
+			top: 90px;
+			width: $width;
+			font-weight: 600;
+			font-family: "Markazi Text";
+			font-size: 18px;
+		}
+
+		& .matricule-badge {
+			position: absolute;
+			font-weight: 600;
+			font-family: Montserrat;
+			font-size: 18px;
+			rotate: 90deg;
+			
+			&.lssd {
+				left: 89px;
+				top: 479px;
+				width: 58px;
+
+				& span:nth-child(1) {
+					transform: translateX(-1px) translateY(-1px) rotate(13deg); // Adjust to curve
+				}
+			
+				& span:nth-child(2) {
+					transform: translateX(0) translateY(2px) rotate(0deg); // Adjust to curve
+				}
+			
+				& span:nth-child(3) {
+					transform: translateX(1px) translateY(-1px) rotate(-13deg); // Adjust to curve
+				}
+			}
+			
+			&.lspd {
+				left: 91px;
+				top: 480px;
+				width: 75px;
+			}
+
+			& span {
+				display: inline-block;
+			}
+
+		}
+		
+		& .grade {
+			position: absolute;
+			left: $startingX;
+			top: 140px;
+			width: $width;
+			font-size: 10px;
+			font-weight: 600;
+			font-family: "Markazi Text";
+		}
+		
+		& .signature {
+			position: absolute;
+			left: $startingX;
+			top: 120px;
+			height: 20px;
+			line-height: 20px;
+			width: $width;
+			font-weight: 600;
+			font-family: "Creattion";
+			font-size: 16px;
+		}
+		
+		& .divisions {
+			position: absolute;
+			left: $startingX;
+			top: 212px;
+			width: $width;
+			max-height: 40px;
+			font-weight: 700;
+			font-size: 7.5px;
+			text-transform: uppercase;
+			font-family: Montserrat;
+			text-align: left;
+
+			&.lssd {
+				color: #7a5220;
+			}
+
+			&.usss {
+				color: #000;
+			}
+
+			&.lspd {
+				color: #003663;
+			}
+		}
+	}	
+}

@@ -1,0 +1,544 @@
+.MenuHabitation {
+	position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 24.5%; 
+    background: linear-gradient(269.61deg, rgba(33, 33, 33, 0) -140.32%, rgba(0, 0, 0, 0.5) 79.6%);
+    gap: 3.4%;
+    
+    .MenuHabitationCreation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 3.3%;
+    }
+
+    .MenuHabitationGestion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 2.7%;
+
+        &__ButtonType {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 91%;
+            height: 15%;
+            color: white;
+    
+            h1 {
+                font-size: 1.3vh;
+                font-weight: 200;
+                color: white;
+                margin-top: 0;
+            }
+
+            &__Items {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                gap: 2.5%;
+
+                &__btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 31%;
+                    cursor: pointer;
+                    background: rgba(0, 0, 0, 0.15);
+
+                    h1 {
+                        font-size: 1.3vh;
+                        font-weight: 100;
+                        margin-top: 2%;
+                    }
+
+                    &:hover {
+                        h1 {
+                            font-weight: 400; 
+                        }
+                    }
+
+                    &.selected {
+                        background: linear-gradient(to right, rgba(94, 108, 182, 1), rgba(94, 108, 182, 0.62));
+                    }
+
+                    &.yellow {
+                        background: linear-gradient(to bottom, rgba(251, 197, 4, .5), rgba(149, 117, 2, .5));
+                    }
+        
+                    &.red {
+                        background: linear-gradient(to bottom, rgba(255, 0, 0, .5), rgba(245, 51, 51, .5));
+                    }
+        
+                    &.green {
+                        background: linear-gradient(to left, rgba(30, 180, 90, 0.5), rgba(56, 220, 102, .5));
+                    }
+                }
+
+            }
+    
+        }
+    }
+
+    .MenuHabitationListing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 3%;
+    
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            width: 85%;
+            height: fit-content;
+            max-height: 62%;
+            overflow-y: auto;
+            column-gap: 0.5vh;
+            row-gap: 0.5vh;
+            overflow-y: auto;
+            
+    
+            &__item {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 100%;
+                height: 12.50vh;
+                background: rgba(0, 0, 0, 0.15);
+                color: white;
+                cursor: pointer;
+    
+                h1 {
+                    position: absolute;
+                    font-size: 1.1vh;
+                    font-weight: 200;
+                }
+    
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(100%);
+                    opacity: .35;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+    
+                &.selected,
+                &:hover {
+                    img {
+                        filter: grayscale(0%);
+                        opacity: 1;
+                    }
+                    h1 {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        &__Button {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 90%;
+            margin-top: 4.5%;
+            height: 11%;
+            gap: 5%;
+
+            &__Btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+                background: rgba(0, 0, 0, 0.15);
+                color: white;
+                font-size: 1.3vh;
+                font-weight: 400;
+
+                h1 {
+                    font-size: 1.4vh;
+                    font-weight: 400;
+                }
+
+                &.green {
+                    background: linear-gradient(180deg, rgba(42, 189, 83, .35) 0%, rgba(15, 131, 47, .35) 100%);
+                    cursor: pointer;
+
+                    &:hover {
+                        background: linear-gradient(180deg, rgba(42, 189, 83, .5) 0%, rgba(15, 131, 47, .5) 100%);
+                    }
+                }
+
+                &.red {
+                    cursor: pointer;
+                    background: linear-gradient(180deg, rgba(253, 127, 127, .35) 0%, rgba(224, 31, 31, .35) 100%);
+        
+                    &:hover {
+                        background: linear-gradient(180deg, rgba(253, 127, 127, .5) 0%, rgba(224, 31, 31, .5) 100%);
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 13.5%;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        &__img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 62%;
+            } 
+        }
+
+        &__title {
+            position: absolute;
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8.5vh;
+
+            h1 {
+                font-size: 1.35vh;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__name {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 91%;
+        height: 5.5%;
+
+        h1 {
+            font-size: 1.3vh;
+            font-weight: 200;
+            margin-top: .5%;
+            color: white;
+        }
+
+        input {
+            width: 91%;
+            height: 100%;
+            background: rgb(0, 0, 0, .25);
+            border: none;
+            color: white;
+            font-size: 1.3vh;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 4%;
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 1.3vh;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__ButtonType {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 91%;
+        height: 21%;
+        color: white;
+
+        h1 {
+            font-size: 1.3vh;
+            font-weight: 200;
+            color: white;
+            margin-top: 0;
+        }
+
+        &__Items {
+            position: relative;
+            display: flex; 
+            justify-content: flex-start; 
+            align-items: center; 
+            width: 100%; 
+            height: 100%; 
+            gap: 1%;
+
+            &__Btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 31.5%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.15);
+                color: white;
+                font-size: 1.3vh;
+                font-weight: 400;
+                cursor: pointer;
+
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(100%);
+                    opacity: .35;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &__title {
+                    position: absolute;
+
+                    h1 {
+                        font-size: 1.4vh;
+                        font-weight: 300;
+                    }
+                }
+                &.selected,
+                &:hover {
+                    img {
+                        filter: grayscale(0%);
+                        opacity: 1;
+                    }
+                    h1 {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+
+    &__stockage {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 91%;
+        height: 8%;
+
+        h1 {
+            font-size: 1.3vh;
+            font-weight: 200;
+            margin-top: 1%;
+            color: white;
+        }
+
+        &__capacite {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 95.5%;
+            height: 100%;
+            color: white;
+            font-size: 1.3vh;
+            font-weight: 400;
+            gap: 1%;
+
+            &__num {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                height: 90%;
+                background: rgba(0, 0, 0, 0.15);
+                color: white;
+                font-size: 1.3vh;
+                font-weight: 400;
+                cursor: pointer;
+                
+                h1 {
+                    margin-top: 12.5%;
+                    font-size: 1.5vh;
+                    font-weight: 400;
+                }
+
+                &.selected,
+                &:hover {
+                    background: linear-gradient(0.23deg, rgba(94, 108, 182, 0.5) 0.19%, rgba(94, 108, 182, 0.31) 37.77%);
+
+                }
+            }
+        }
+
+    }
+
+    &__duration {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 91%;
+        height: 5%;
+    
+        &__text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0;
+          width: 95.5%;
+    
+          h1, h2 {
+            font-size: 1.3vh;
+            font-weight: 200;
+            color: white;
+          }
+
+          span {
+            font-size: 1.3vh;
+            font-weight: 500;
+            color: white;
+          }
+        }
+    
+        & .cSlider {
+            position: absolute;
+            background-color: none;
+            width: 87%;
+            height: 0%;
+        
+            & .MuiSlider-rail {
+                height: 40%;
+                border-radius: 0.2%;
+                background: rgba(0, 0, 0, 0.35);
+            }
+        
+            & .MuiSlider-track {
+                background: linear-gradient(89.03deg, rgba(255, 255, 255, 0.5) 0.83%, #FFFFFF 85.98%);
+                border: none;
+                height: 40%;
+                border-radius: 0.2%;
+            }
+        
+            & .MuiSlider-thumb {
+                box-shadow: none !important;
+                width: 2.3vh;
+                height: 2.3vh;
+                background: #FFFFFF;
+            }
+        }
+    }
+
+    &__Listing {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 91%;
+        height: 12%;
+        gap: 1%;
+
+        h1 {
+            font-size: 1.3vh;
+            font-weight: 200;
+            color: white;
+        }
+
+        &__Case {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.15);
+            color: white;
+            gap: 13%;
+
+            &__img {
+                margin-left: 7.2%;
+                width: 20%;
+                height: 27%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(0.23deg, rgba(94, 108, 182, 0.5) 0.19%, rgba(94, 108, 182, 0.31) 37.77%);
+            }
+            
+
+        }
+        
+    }
+
+    &__Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        width: 91%;
+        height: 6.2%;
+        color: white;
+        font-size: 1.3vh;
+        font-weight: 400;
+        background: rgba(0, 0, 0, 0.15);
+
+        h1 {
+            font-size: 1.4vh;
+            font-weight: 400;
+            color: white;
+        }
+
+        &.green {
+            background: linear-gradient(180deg, rgba(42, 189, 83, .35) 0%, rgba(15, 131, 47, .35) 100%);
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(180deg, rgba(42, 189, 83, .5) 0%, rgba(15, 131, 47, .5) 100%);
+            }
+        }
+
+
+    }
+}

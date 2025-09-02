@@ -1,0 +1,102 @@
+.altPropertyMenu {
+    width: 0;
+
+    .mainContainer {
+        width: 469px;
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, .5), rgba(19, 19, 19, 0.4));
+        align-items: center;
+
+        min-height: calc(100vh / var(--scale)) !important;
+        scale: var(--scale) !important;
+        transform-origin: left top;
+
+        .ownerContainer {
+            margin: auto;
+        }
+
+        .owner,
+        .mailBox {
+            width: 425px;
+            height: 90px;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 1px;
+            font-size: 20px;
+            font-weight: 300;
+            color: white;
+            display: flex;
+        }
+
+        .owner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            box-sizing: border-box;
+
+            img {
+                width: 91px;
+                height: 91px;
+                position: absolute;
+                left: 23px;
+            }
+
+            &:hover {
+                transition: 500ms;
+                background: linear-gradient(to bottom, rgba(94, 108, 182, .7), rgba(41, 47, 80, .7));
+                cursor: pointer;
+            }
+        }
+
+        .mailBox {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            img {
+                position: absolute;
+                left: 55px;
+                width: 22px;
+                margin-bottom: -5px;
+            }
+
+            &:hover {
+                transition: 500ms;
+                background: linear-gradient(to bottom, rgba(94, 108, 182, .7), rgba(41, 47, 80, .7));
+                cursor: pointer;
+            }
+        }
+    }
+
+    .buttons {
+        margin-bottom: 65px;
+    }
+
+    .adress {
+        position: absolute;
+        padding: 10px 30px 10px 50px;
+        right: 0;
+        top: 100px;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.4) 0%, rgba(10, 10, 10, 0.2) 78%, rgba(19, 19, 19, 0) 100%);
+        font-size: 3.5vw;
+        font-weight: 200;
+        color: white;
+        text-transform: uppercase;
+
+        scale: var(--scale) !important;
+        transform-origin: right center;
+
+        b {
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+.Pound {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .test {
+        position: absolute;
+        left: 26%;
+    }
+    .Pound-Container {
+        display: flex;
+        flex-direction: column;
+        width: 24.5vw;
+        height: 105%;
+        background: linear-gradient(269.61deg, rgba(33, 33, 33, 0) -140.32%, rgba(0, 0, 0, 0.5) 79.6%);
+        .Pound-Header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 100%;
+            }
+        }
+        .Pound-Categories {
+            display: flex;
+            margin-top: 0%;
+            width: 100%;
+            .Category {
+                flex: 1;
+                padding: 1.5%;
+                background: rgba(0, 0, 0, 0.18);
+                border: none;
+                outline: none;
+                color: #f0f0f0;
+                text-align: center;
+                cursor: pointer;
+                transition: background 0.3s ease, font-weight 0.3s ease;
+                h1 {
+                    color: white;
+                    font-size: 0.8vw;
+                    font-weight: lighter;
+                    transition: font-weight 0.1s ease;
+                }
+                &:hover,
+                &.active {
+                    background: linear-gradient(to top, rgba(94, 108, 182, 0.4) 0%, rgba(70, 80, 135, 0.4) 47%, rgba(41, 47, 80, 0.4));
+                    opacity: 0.8;
+                    h1 {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .Pound-Content {
+            .Content-Title {
+                margin-left: 2.3vh;
+                margin-top: 2.9vh;
+                h1 {
+                    font-size: 0.78vw;
+                    color: white;
+                    font-weight: 300;
+                }
+            }
+            .Cars-Container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 65.2vh;
+                gap: 10px;
+                overflow-y: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                .Item {
+                    flex: 0 0 auto;
+                    width: 90%;
+                    height: 8.4vh;
+                    min-height: 50px;
+                    background: linear-gradient(270.14deg, rgba(32, 32, 32, 0.25) 0.11%, rgba(0, 0, 0, 0.5) 99.87%);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    transition: background 0.3s ease;
+                    &:hover {
+                        cursor: pointer;
+                        background: linear-gradient(to bottom, rgba(94, 108, 182, 0.4) 0%, rgba(70, 80, 135, 0.4) 47%, rgba(41, 47, 80, 0.4));
+                        opacity: 0.8;
+                        .Image img {
+                            transform: scale(1.1);
+                        }
+                    }
+                    &.selected {
+                        background: linear-gradient(to bottom, rgba(94, 108, 182, 0.4) 0%, rgba(70, 80, 135, 0.4) 47%, rgba(41, 47, 80, 0.4));
+                        opacity: 0.9;
+                        .Image img {
+                            transform: scale(1.1);
+                        }
+                    }
+                    .Image {
+                        width: 26%;
+                        display: flex;
+                        justify-content: center;
+                        margin-left: 2.8%;
+                        img {
+                            width: 100%;
+                            height: auto;
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    }
+                    h1 {
+                        font-size: 1.7vh;
+                        font-weight: 300;
+                        color: white;
+                        margin-right: 21%;
+                        flex-grow: 1;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .BuyButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 6.5%;
+            margin: 7.8% auto;
+            border: none;
+            outline: none;
+            opacity: 0.65;
+            background: linear-gradient(180deg, rgb(42, 189, 83) 0%, rgba(15, 131, 47) 100%);
+            transition: opacity 0.3s ease;
+            h1 {
+                color: white;
+                font-weight: 200;
+                font-size: 0.88vw;
+            }
+            &:hover {
+                opacity: .8;
+                font-weight: 300;
+                cursor: pointer;
+            }
+        }
+    }
+}

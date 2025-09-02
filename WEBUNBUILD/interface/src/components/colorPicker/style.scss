@@ -1,0 +1,139 @@
+.colorPicker {
+    width: 314px;
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 1.6px 6.4px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    padding-top: 10px;
+    backface-visibility: hidden;
+    /* Empêche les artefacts visuels */
+    -webkit-font-smoothing: antialiased;
+    /* Améliore le rendu */
+    scale: var(--scale) !important;
+    transform-origin: right center;
+    & .span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        opacity: 0.9;
+        margin: 8px 0 8px 0;
+    }
+    & .color {
+        width: 23px;
+        height: 23px;
+        min-width: 23px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.1)
+        }
+        &.selected {
+            border-image-slice: 1;
+            position: relative;
+            border-radius: 2px;
+            padding: 1.5px;
+            background: linear-gradient(to bottom, white, rgb(255, 255, 255, 0)) !important;
+            div {
+                width: 100%;
+                height: 100%;
+                border-radius: 1px;
+            }
+            &::after {
+                content: "";
+                width: 10px;
+                position: absolute;
+                width: 23px;
+                height: 23px;
+                z-index: 1000;
+                left: 0;
+                bottom: 0;
+                translate: 0px;
+                background-image: url('https://cdn.eltrane.cloud/3838384859/assets/tabletteIllegale/checkmark_yellow.webp');
+                background-size: 45%;
+                background-position: 55% 50%;
+                background-repeat: no-repeat;
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    & .colorPick {
+        display: flex;
+        overflow: hidden;
+        flex-wrap: unset;
+        max-width: 277px;
+        gap: 2px;
+        margin: 5px 0;
+    }
+    & .left,
+    & .right {
+        position: absolute;
+    }
+    & .opacity {
+        width: 240px;
+        min-width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        * {
+            box-shadow: none !important;
+        }
+        &Container {
+            width: 100%;
+            display: flex;
+        }
+        .MuiSlider {
+            &-root {
+                padding: 0;
+            }
+            &-thumb {
+                background-color: white;
+                width: 17px;
+                height: 17px;
+                transition: .3s;
+                &:hover,
+                &.Mui-active {
+                    width: 17px;
+                    height: 17px;
+                    scale: 1.1;
+                }
+            }
+            &-rail {
+                height: 8px;
+                border-radius: 1px;
+                background-color: rgba(255, 255, 255, 0.4);
+            }
+            &-track {
+                background: linear-gradient(to left, #FFFFFF 0%, #898989 100%);
+                border: none;
+                height: 8px;
+                border-radius: 1px;
+            }
+        }
+    }
+    & .opacityValue {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        opacity: 1;
+        pointer-events: none;
+        width: 25px;
+        justify-content: end;
+        text-align: right;
+    }
+}

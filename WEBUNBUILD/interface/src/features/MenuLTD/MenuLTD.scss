@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "DigialNumbers";
+  src: url("../../assets/fonts/DigitalNumbers-Regular.ttf");
+}
+
+.MenuLTD_title {
+  background: rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", serif;
+  height: 4.815vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-weight: 400;
+    font-size: 1.296vh;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+  }
+}
+
+.MenuLTD_container {
+  position: absolute;
+  margin-top: 2.593vh;
+  color: #fff;
+  padding: 0 1.563vw;
+
+  p {
+    margin: 0;
+  }
+
+  .MenuLTD_info_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.18vh;
+  }
+
+  .MenuLTD_volume_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.704vh;
+
+    .infos {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.926vh;
+    }
+
+    .quantity {
+      font-weight: 300;
+      font-size: 1.296vh;
+    }
+
+    * {
+      box-shadow: none !important;
+    }
+
+    .MuiSlider {
+      &-root {
+        padding: 0;
+      }
+
+      &-thumb {
+        background-color: white;
+        width: 1.25vw;
+        height: 2.222vh;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      &-rail {
+        height: 0.926vh;
+        border-radius: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &-track {
+        background: linear-gradient(to left, #ffffff 0%, #898989 100%);
+        border: none;
+        height: 0.926vh;
+        border-radius: 1px;
+      }
+    }
+  }
+
+  .MenuLTD_payment_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.241vh;
+
+    .payment_choice:last-child {
+      margin-top: 1.667vh;
+    }
+
+    .payment_choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.2);
+        height: 5.741vh;
+
+        &:hover, &.active {
+          transition: 500ms;
+          background: linear-gradient(to bottom, rgba(94, 108, 182, .7), rgba(41, 47, 80, .7));
+          cursor: pointer;
+        }
+
+      p {
+        text-align: center;
+        width: 100%;
+        font-weight: 300;
+        font-size: 1.389vh;
+      }
+
+      img {
+        position: absolute;
+        left: 4.167vw;
+        width: 1.620vw;
+      }
+    }
+  }
+
+
+  .title-section {
+    font-size: 1.296vh;
+    margin: 0 0 0.463vh 0;
+  }
+
+}
+
+.MenuLTD_action_container {
+  margin-top: 1.852vh;
+
+  .MenuLTD_action_button_container {
+    display: flex;
+    justify-content: center;
+    gap: 0.26vw;
+    width: 100%;
+  }
+}
+
+
+

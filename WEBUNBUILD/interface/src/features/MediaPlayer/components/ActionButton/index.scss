@@ -1,0 +1,97 @@
+// btn-primary
+$btn-primary-color: linear-gradient(180deg, rgba(94, 108, 182, 0.2) 0%, rgba(94, 108, 182, 0.5) 100%);
+
+$btn-primary-color-hover: linear-gradient(180deg, rgba(94, 108, 182, 0.4) 0%, rgba(94, 108, 182, 0.7) 100%);
+
+// btn-danger
+$btn-danger-color: linear-gradient(0deg, rgba(255,0,0,0.2) 0%, rgba(224,31,31,0.5) 100%);
+
+$btn-danger-color-hover: linear-gradient(0deg, rgba(255,0,0,0.4) 0%, rgba(224,31,31,0.7) 100%);
+
+// btn-success
+$btn-success-color: linear-gradient(90deg, rgba(42,189,83,0.2) 0%, rgba(15,131,47,0.5) 100%);
+
+$btn-success-color-hover: linear-gradient(90deg, rgba(42,189,83,0.4) 0%, rgba(15,131,47,0.7) 100%);
+
+// btn-default
+$btn-default-color: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 100%, );
+
+$btn-default-color-hover: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%, );
+
+.queue-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 20px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+    background: $btn-default-color;
+    
+
+    &:hover {
+        background: $btn-primary-color;
+    }
+}
+
+.queue-btn-list {
+    @extend .queue-btn;
+    display: flex;
+    justify-content: space-between;
+}
+
+.queue-btn .icon {
+    position: absolute;
+    left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.queue-btn .text {
+    text-align: center;
+    flex: 1;
+}
+
+.btn-footer {
+    font-size: 15px;
+    padding: 25px 20px;
+    margin-bottom: 8px;
+}
+
+.queue-number {
+    font-size: 14px;
+    margin-right: 35px;
+}
+
+.favorite-like {
+    @extend .queue-number;
+}
+
+
+.queue-btn-primary {
+    background: $btn-primary-color;
+
+    &:hover {
+        background: $btn-primary-color-hover
+    }
+}
+
+.queue-btn-danger {
+    background: $btn-danger-color;
+    
+    &:hover {
+        background: $btn-danger-color-hover;
+    }
+}
+
+.queue-btn-success {
+    background: $btn-success-color;
+
+    &:hover {
+        background: $btn-success-color-hover;
+    }
+}

@@ -1,0 +1,172 @@
+.Speedometer-container {
+    position: relative;
+    display: flex;
+    width: 20%;
+    height: 10%;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(98.5vh) translateX(200%);
+    z-index: -1;
+
+    .anim {
+        transition: 0.35s stroke-dashoffset;
+    }
+
+    .SpeedComponent {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+        height: 100%;
+
+        .speedometer-inside {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            .arc-circle {
+                transform: scale(3.5) translateX(-6%); 
+            }
+
+            svg {
+                position: relative;
+                display: flex;
+                width: 30%;
+                height: 30%;
+                margin-bottom: 1.8vw;
+            }
+
+
+        }
+    }
+
+    .motor {
+        position: relative;
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: flex-start; 
+        height: 100%;
+
+        .arc-circle {
+            scale: 1.2;
+            transform: rotate(107deg);
+        }
+
+        svg {
+            position: relative;
+            display: flex;
+            width: 30%;
+            margin-bottom: .6vw;
+            right: 1.45vw;
+        }
+
+        img {
+            position: absolute;
+            width: 10%;
+            margin-bottom: 1.1vw;
+            right: 6.95vw;
+        }
+    }
+
+    .fuel {
+        position: relative;
+        display: flex; 
+        align-items: flex-end; 
+        justify-content: flex-end;
+        height: 100%;
+
+        .arc-circle {
+            scale: 1.2;
+            transform: rotate(-105deg);
+        }
+
+        svg {
+            position: relative;
+            display: flex;
+            width: 30%;
+            left: 1.5vw;
+        }
+
+        img {
+            position: absolute;
+            width: 8%;
+            margin-bottom: 0.9vw;
+            left: 6.95vw;
+        }
+    }
+
+    .TurnsignalComponent {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: .4vw;
+        left: 2.5vw;
+        margin-bottom: .6vh;
+        width: 20%;
+
+        .icon {
+            position: relative;
+            display: flex;
+            width: 35%;
+            height: 1.5%;
+            gap: .2vw;
+
+            svg {
+                height: 1.5vw;
+            }
+        }
+
+    }
+
+    .HeadlightComponent {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        gap: .4vw;
+        right: 4.5vw;
+        margin-bottom: .6vh;
+        width: 20%;
+
+
+        .icon {
+            position: relative;
+            display: flex;
+            width: 35%;
+            height: 1%;
+            gap: .4vw;
+
+            img {
+                height: .9vw;
+            }
+        }
+    }
+
+    .SirenComponent {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.4vw;
+        right: 3vw;
+        margin-bottom: 0.6vh;
+        width: 20%;
+
+        .icon {
+            position: relative;
+            display: flex;
+            width: 35%;
+            height: 1%;
+            gap: .4vw;
+
+            img {
+                height: .9vw;
+            }
+        }
+    }
+}

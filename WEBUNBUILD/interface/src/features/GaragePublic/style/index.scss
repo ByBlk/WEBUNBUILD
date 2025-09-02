@@ -1,0 +1,231 @@
+.GaragePublicContainer {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 100%; 
+    width: 24.5%; 
+    background: linear-gradient(269.61deg, rgba(33, 33, 33, 0) -140.32%, rgba(0, 0, 0, 0.5) 79.6%);
+
+    &__title {
+        position: relative; 
+        text-align: center;
+        margin-top: 8%;
+        color: white;
+        width: 100%;
+        height: 13%;
+
+        h1 {
+            font-size: 3.8vh;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0; 
+        }
+
+        h2 {
+            font-size: 1.5vh;
+            font-weight: lighter;
+            text-transform: uppercase;
+            margin-top: 1.5%;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 63%;
+        gap: 1.9%;
+
+        .EmplacementComponents {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 48.5%;
+
+            h1 {
+                text-align: left;
+                font-size: 1.5vh;
+                font-weight: 300;
+                margin-top: 1.5%;
+                color: white;
+                margin-left: 4.5%;
+            }
+
+            &__Containt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                gap: 3%;
+                overflow-y: auto; /* Enable vertical scrolling */
+
+                .Items {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 90%;
+                    height: 32%;
+                    background: linear-gradient(270.14deg, rgba(32, 32, 32, .25) 0.11%, rgba(0, 0, 0, 0.5) 99.87%);
+                    cursor: pointer;
+
+                    &__img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-width: 30%;
+                        min-height: 100%;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            margin-left: 20%;
+                        }
+    
+                        &.default-img img {
+                            width: 25%;
+                            height: 25%; 
+                        }
+                    }
+
+                    &__label {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        margin-right: 20%;
+
+                        h1 {
+                            font-size: 1.7vh;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+
+                    &.selected,
+                    &:hover {
+                        font-weight: 400;
+                        background: linear-gradient(0.23deg, rgba(94, 108, 182, 0.5) 0.19%, rgba(94, 108, 182, 0.31) 37.77%);
+
+                        img {
+                            scale: 1.1;
+                        }
+                    }
+                }
+            }
+
+            &__Button {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 10%;
+                margin-top: 69.9vh;
+
+            }
+        }
+
+        .FourièreComponents {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 48.5%;
+
+            h1 {
+                text-align: left;
+                font-size: 1.5vh;
+                font-weight: 300;
+                margin-top: 1.5%;
+                color: white;
+                margin-left: 4.5%;
+            }
+
+            &__Containt {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 100%;
+                gap: 3%;
+                overflow-y: auto; 
+
+                .Items {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    min-width: 90%;
+                    min-height: 32%;
+                    background: linear-gradient(270.14deg, rgba(184, 44, 44, .1) 0.11%, rgba(71, 7, 7, .6) 99.87%);
+                    cursor: pointer;
+
+                    &__img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        min-width: 30%;
+                        min-height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            margin-left: 20%;
+                        }
+                    }
+
+                    &__label {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        margin-right: 20%;
+
+                        h1 {
+                            font-size: 1.7vh;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+
+                    &.selected,
+                    &:hover {
+                        font-weight: 400;
+                        background: linear-gradient(270.14deg, rgba(184, 44, 44, .2) 0.11%, rgba(71, 7, 7, .7) 99.87%);
+
+                        img {
+                            scale: 1.1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__Button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+
+        &__Items {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

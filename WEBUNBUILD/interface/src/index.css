@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+    color-scheme: normal !important;
+}
+
+body {
+    /* background: url("https://cdn.discordapp.com/attachments/1326552171889688678/1360979766345203912/73rtwzJ.png?ex=67fd16ae&is=67fbc52e&hm=ac6c1554a79a8edb2ba14094de55b393f7c450b85e3139558c23c108759e4dba&"); */
+    background-size: cover;
+    overflow: hidden !important;
+    user-select: none;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+
+#root {
+    height: 100%;
+    background: transparent !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Hide scrollbar for all elements */
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    display: none;
+}

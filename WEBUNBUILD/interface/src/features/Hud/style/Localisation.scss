@@ -1,0 +1,69 @@
+#localisation {
+  position: absolute;
+  top: 3.06vh;
+  left: 2.55vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 8.75vw;
+  height: 3.33vh;
+  border-radius: 0.19vh;
+  background: linear-gradient(to bottom, rgba(41, 41, 41, 0.3) 100%, rgba(0, 0, 0, 0.3) 75%);
+  transition: background 0.25s ease;
+
+  &:hover {
+    background: linear-gradient(to bottom, var(--hover-color) 100%, rgba(0, 0, 0, 0.30) 75%);
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2vh;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &:hover {
+    background: linear-gradient(to bottom, var(--hover-color) 100%, rgba(0, 0, 0, 0.3) 75%);
+  }
+
+  .icon-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.22vh;
+    height: 1.25vw;
+    flex-shrink: 0;
+  }
+
+  .icon {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
+  }
+
+  .default {
+    width: 70%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  .hover {
+    opacity: 0;
+  }
+
+  &:hover {
+    .default {
+      opacity: 0;
+    }
+    .hover {
+      opacity: 1;
+    }
+  }
+}

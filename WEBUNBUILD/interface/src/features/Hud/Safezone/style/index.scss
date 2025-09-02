@@ -1,0 +1,21 @@
+.safezone {
+    position: absolute;
+    bottom: 15.2%;
+    left: 1.5%;
+    height: 2%;
+    width: 1.4%;
+    padding: 1vh;
+
+    background: rgb(49, 180, 90, 1);
+    background: linear-gradient(
+        130deg,
+        rgba(49, 180, 90, .8) 25%,
+        rgba(255, 255, 255, 0) 50%
+
+    );
+
+    img {
+        position: absolute;
+        width: 35%;
+    }
+}

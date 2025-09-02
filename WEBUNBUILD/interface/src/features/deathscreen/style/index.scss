@@ -1,0 +1,205 @@
+.DeathscreenContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .deathscreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 24.5%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 3%, rgba(0, 0, 0, .8) 54%, rgba(0, 0, 0, 0) 100%);
+        gap: 2%;
+        &__time {
+            margin-top: 20%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 14%;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-size: 5vw;
+                color: white;
+                margin: 0;
+                font-weight: 600;
+            }
+            span {
+                font-size: 1.5vh;
+                color: white;
+                margin: 0;
+                font-weight: 200;
+            }
+        }
+        &__containerCase {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 50%;
+            justify-content: center;
+            gap: 2%;
+            position: relative;
+            &__Case {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 18%;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, .15);
+                cursor: pointer;
+                flex-shrink: 0;
+                flex-grow: 0;
+                &.selected,
+                &:hover {
+                    background: linear-gradient(180deg, rgba(243, 80, 72, 0.2771) 0%, rgba(250, 36, 33, 0.317224) 100%);
+                }
+                h1 {
+                    font-size: 1vw;
+                    color: white;
+                    margin: 0;
+                    font-weight: lighter;
+                }
+            }
+            &__CaseReport {
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 104.2%;
+                height: 33%;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                gap: 2%;
+                padding: 2%;
+                box-sizing: border-box;
+                h1 {
+                    font-size: 1vw;
+                    color: white;
+                    margin: 0;
+                    font-weight: lighter;
+                }
+                textarea {
+                    font-family: 'Montserrat';
+                    width: 94%;
+                    height: 90%;
+                    border: none;
+                    background: rgba(0, 0, 0, .15);
+                    resize: none;
+                    outline: none;
+                    color: white;
+                    font-size: 0.8vw;
+                    padding: 3%;
+                    margin-top: 1%;
+                    font-weight: 200;
+                    &::placeholder {
+                        font-family: 'Montserrat';
+                        color: white;
+                        font-size: 0.8vw;
+                        font-weight: 100;
+                    }
+                }
+                .error {
+                    position: absolute;
+                    margin-top: 20.1%;
+                    margin-left: 12.5%;
+                    color: white;
+                    font-size: 1.3vh;
+                }
+                &__send {
+                    display: flex;
+                    width: 100%;
+                    height: 30%;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, .15);
+                    cursor: pointer;
+                    h1 {
+                        font-size: 1vw;
+                        color: white;
+                        margin: 0;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+        &__button {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 20%;
+        }
+        &__respawn {
+            width: 90%;
+            height: 42%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .15);
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.25);
+            }
+            h1 {
+                font-size: 1vw;
+                color: white;
+                margin: 0;
+                font-weight: lighter;
+            }
+        }
+    }
+    .idcontainer {
+        position: absolute;
+        display: flex;
+        width: 7%;
+        height: 5%;
+        top: 5%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .2) 100%);
+        h1 {
+            font-size: 1vw;
+            color: white;
+            margin: 0;
+            font-weight: 400;
+        }
+        span {
+            font-size: 1vw;
+            color: white;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .messagecontainer {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        padding: 1px 4.5%;
+        height: 10%;
+        bottom: 7.5%;
+        max-width: 60%;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .2) 100%);
+        h1 {
+            font-size: 2.6vw;
+            color: white;
+            margin: 0;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+        span {
+            font-size: 2.6vw;
+            background: linear-gradient(180deg, #FF6767 0%, #FF0C0C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+}

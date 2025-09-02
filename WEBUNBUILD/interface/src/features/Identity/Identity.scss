@@ -1,0 +1,175 @@
+#layout_card {
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  width: 21.094vw;
+  height: 21.694vh;
+
+  &.driver-card {
+    background-image: url("./assets/DriverLicense.png");
+    background-position: center;
+    background-size: cover;
+
+    .driver_licence {
+      position: absolute;
+      top: 17%;
+      left: 39.5%;
+      color: #d52929;
+      font-weight: bold;
+      font-size: 1.2vh;
+    }
+
+    .class {
+      position: absolute;
+      top: 17%;
+      right: 23%;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1vh;
+    }
+  }
+
+  &.identity-card {
+    background-image: url("./assets/IdentificationCard.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .exp_date {
+    position: absolute;
+    top: 24.5%;
+    left: 41%;
+    color: #d52929;
+    font-weight: 600;
+    font-size: 1.2vh;
+  }
+
+  .last_name {
+    position: absolute;
+    top: 31%;
+    left: 40%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2vh;
+  }
+
+  .first_name {
+    position: absolute;
+    top: 36.5%;
+    left: 40%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2vh;
+  }
+
+  .address {
+    position: absolute;
+    top: 44%;
+    left: 36%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1vh;
+    width: 8vw;
+    line-height: 1.1vh;
+  }
+
+  .date_of_birth {
+    position: absolute;
+    top: 52%;
+    left: 41.5%;
+    text-transform: uppercase;
+    color: #d52929;
+    font-weight: 600;
+    font-size: 1.2vh;
+  }
+
+  .rstr {
+    position: absolute;
+    top: 59%;
+    left: 42.5%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1vh;
+  }
+
+  .end_date {
+    position: absolute;
+    top: 27%;
+    right: 20%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1vh;
+  }
+
+  .sex {
+    position: absolute;
+    bottom: 12%;
+    left: 51%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+  }
+
+  .height {
+    position: absolute;
+    bottom: 7.5%;
+    left: 51%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+  }
+
+  .hair {
+    position: absolute;
+    bottom: 12%;
+    left: 66%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+  }
+
+  .weight {
+    position: absolute;
+    bottom: 8.5%;
+    left: 66%;
+    font-weight: bold;
+    font-size: 0.9vh;
+  }
+
+  .eyes {
+    position: absolute;
+    bottom: 12%;
+    right: 12%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1vh;
+  }
+
+  .primary_mugshot {
+    position: absolute;
+    top: 29%;
+    left: 8.8%;
+    width: 5.650vw;
+    z-index: 2;
+  }
+
+  .primary_mughsot_placeholder {
+    position: absolute;
+    top: 15.5%;
+    left: 9%;
+    width: 5.600vw;
+    height: 13.4vh;
+    background-color: #f3ebdf;
+    z-index: 1;
+  }
+
+  .secondary_mugshot {
+    position: absolute;
+    bottom: 22%;
+    left: 59%;
+    width: 2.650vw;
+    z-index: 2;
+    filter: grayscale(1);
+    opacity: 80%;
+  }
+}

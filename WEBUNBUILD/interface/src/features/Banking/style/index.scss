@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.banking {
+    position: absolute;
+    background-color: none;
+    top: 15.2%;
+    left: 13.5%;
+    height: 69.3%;
+    width: 69.25%;
+    font-family: "Montserrat", serif;
+    font-style: lighter;
+
+    &__navbar {
+        position: absolute;
+        width: 20.3%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+        left: 30%;
+        &__img {
+            position: absolute;
+            top: 2.5%;
+            left: 30.1%;
+            width: 40.5%;
+        }
+        &__item {
+            &_global {
+                position: absolute;
+                top: 16.1%;
+                left: 9%;
+                width: 100%;
+                height: 7.5%;
+                border-radius: 0.2vh;
+                font-size: 1.6vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                z-index: 10;
+            }
+            &_transactions {
+                transition-duration: 500ms;
+                position: absolute;
+                top: 20.3%;
+                width: 100%;
+                height: 3.9%;
+                background: rgba(0, 0, 0, 0.2);
+                font-size: 1.1vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 11;
+                &:hover {
+                    transition-duration: 500ms;
+                    background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                    cursor: pointer;
+                }
+            }
+            &_gestion {
+                position: absolute;
+                top: 28.5%;
+                left: 9%;
+                width: 100%;
+                height: 7.5%;
+                border-radius: 0.2vh;
+                font-size: 1.6vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                z-index: 10;
+            }
+            &_comptes {
+                transition-duration: 500ms;
+                position: absolute;
+                top: 32.7%;
+                width: 100%;
+                height: 3.9%;
+                background: rgba(0, 0, 0, 0.2);
+                font-size: 1.1vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 11;
+                &:hover {
+                    transition-duration: 500ms;
+                    background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                    cursor: pointer;
+                }
+            }
+            &_cartes {
+                transition-duration: 500ms;
+                position: absolute;
+                top: 37.1%;
+                width: 100%;
+                height: 3.9%;
+                background: rgba(0, 0, 0, 0.2);
+                font-size: 1.1vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 11;
+                &:hover {
+                    transition-duration: 500ms;
+                    background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                    cursor: pointer;
+                }
+            }
+            &_acces {
+                position: absolute;
+                top: 44.9%;
+                left: 9%;
+                width: 100%;
+                height: 7.5%;
+                border-radius: 0.2vh;
+                font-size: 1.6vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                z-index: 10;
+            }
+            &_perso {
+                transition-duration: 500ms;
+                position: absolute;
+                top: 48.6%;
+                width: 100%;
+                height: 3.9%;
+                background: rgba(0, 0, 0, 0.2);
+                font-size: 1.1vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 11;
+                &:hover {
+                    transition-duration: 500ms;
+                    background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                    cursor: pointer;
+                }
+            }
+            &_job {
+                transition-duration: 500ms;
+                position: absolute;
+                top: 53%;
+                width: 100%;
+                height: 3.9%;
+                background: rgba(0, 0, 0, 0.2);
+                font-size: 1.1vh;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 11;
+                &:hover {
+                    transition-duration: 500ms;
+                    background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                    cursor: pointer;
+                }
+            }
+
+            .banking__navbar__item_profile {
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                width: 100%;
+                height: 13.6%;
+                background: rgba(0, 0, 0 , 0.2);
+               .banking__navbar__item_profile_img {
+                    position: absolute;
+                    top: 17%;
+                    left: 5.3%;
+                    width: 15%;
+                    height: auto;
+                    border-radius: 100%;
+               } 
+               .banking__navbar__item_profile_name {
+                    position: absolute;
+                    top: 24%;
+                    right: 10%;
+                    width: 100%;
+                    height: 7.5%;
+                    border-radius: 0.2vh;
+                    font-size: 2vh;
+                    color: white;
+                    text-align: right;
+                    z-index: 10;
+               }
+               .banking__navbar__item_profile_type {
+                    position: absolute;
+                    top: 54%;
+                    left: 47%;
+                    width: 100%;
+                    height: 7.5%;
+                    border-radius: 0.2vh;
+                    font-size: 1.1vh;
+                    color: white;
+                    text-align: center;
+                    display: flex;
+                    z-index: 10;
+               }
+            }
+        }
+    }
+
+    .banking__component__transactions {
+        position: absolute;
+        bottom: -22.5%;
+        left: 10.2%;
+        width: 75.5%;
+        height: 71.8%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+        overflow-y: scroll;
+        z-index: 10;
+
+        .banking__component__transactions__label {
+            position: absolute;
+            top: 7.5%;
+            left: 4.8%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .banking__component__transactions__nav {
+            position: absolute;
+            top: 22%;
+            width: 100%;
+            height: 9.5%;
+            background: rgba(0, 0, 0, 0.2);
+
+            .banking__component__transactions__nav__nom {
+                position: absolute;
+                top: 33%;
+                left: 9.5%;
+                color: white;
+                border-radius: 0.2vh;
+                font-size: 1.1vh;
+            }
+
+            .banking__component__transactions__nav__date {
+                position: absolute;
+                top: 33%;
+                left: 36.1%;
+                color: white;
+                border-radius: 0.2vh;
+                font-size: 1.1vh;
+            }
+
+            .banking__component__transactions__nav__montant {
+                position: absolute;
+                top: 33%;
+                left: 57.8%;
+                color: white;
+                border-radius: 0.2vh;
+                font-size: 1.1vh;
+            }
+
+            .banking__component__transactions__nav__statut {
+                position: absolute;
+                top: 33%;
+                left: 84.3%;
+                color: white;
+                border-radius: 0.2vh;
+                font-size: 1.1vh;
+            }
+        }
+        .banking__component__transactions__list {
+            position: absolute;
+            top: 31.5%;
+            width: 100%;
+            height: 79vh;
+            z-index: 15;
+
+            &::-webkit-scrollbar {
+                width: 0.5vh;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: rgba(0, 0, 0, 0.2);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 1vh;
+            }
+
+            img {
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4%;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            &_item {
+                position: relative;
+                width: 100%;
+                height: 6%;
+                display: flex;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.2);
+                &:nth-child(odd) {
+                    background: rgba(0, 0, 0, 0.1);
+                }
+                
+                &__name {
+                    position: absolute;
+                    width: 26%;
+                    color: white;
+                    font-size: 1.1vh;
+                    text-align: center;
+                }
+
+                &__date {
+                    position: absolute;
+                    width: 21%;
+                    left: 27.5%;
+                    color: white;
+                    font-size: 1.1vh;
+                    text-align: center;
+                }
+
+                &__montant {
+                    position: absolute;
+                    width: 26%;
+                    left: 48.5%;
+                    color: white;
+                    font-size: 1.1vh;
+                    text-align: center;
+                }
+
+                &__status {
+                    position: absolute;
+                    width: 15%;
+                    left: 79.4%;
+                    color: white;
+                    font-size: 1.1vh;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .banking__component__statistiques {
+        position: absolute;
+        top: -22%;
+        left: 10.2%;
+        width: 75.5%;
+        height: 72%;
+        background: none;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+    }
+
+    .banking__component__myaccount {
+        position: absolute;
+        top: -22%;
+        left: 56.2%;
+        width: 38.7%;
+        height: 72%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+
+        .banking__component__myaccount__label {
+            position: absolute;
+            top: 4%;
+            left: 7.7%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .banking__component__myaccount__solde {
+            .banking__component__myaccount__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 55%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+            }
+        }
+
+        .banking__component__myaccount__card {
+            .banking__component__myaccount__card__img {
+                position: absolute;
+                top: 25.7%;
+                left: 7%;
+                width: 83.2%;
+                height: 45.8%;
+                border: none;
+                border-radius: 0.2vh;
+            }
+            .banking__component__myaccount__card__number {
+                position: absolute;
+                top: 43.6%;
+                left: 13.3%;
+                color: white;
+                font-size: 1.5vh;
+                letter-spacing: 0.45vh;
+            }
+            .banking__component__myaccount__card__date {
+                position: absolute;
+                top: 54%;
+                left: 33.6%;
+                color: white;
+                font-size: 1.05vh;
+            }
+            .banking__component__myaccount__card__name {
+                position: absolute;
+                top: 61.7%;
+                left: 14%;
+                color: white;
+                font-size: 1.05vh;
+                letter-spacing: 0.03vh;
+            }
+        }
+
+        .banking__component__myaccount__solde {
+            .banking__component__myaccount__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 19%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+                text-align: right;
+                width: 70%;
+            }
+        }
+
+        .banking__component__myaccount__retrait {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 74.3%;
+            left: 8.4%;
+            width: 80.9%;
+            height: 7.6%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 0.95vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 11;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+
+        .banking__component__myaccount__depot {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 83.4%;
+            left: 8.4%;
+            width: 80.9%;
+            height: 7.6%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 0.95vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 11;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .banking__component__myaccount__deposit {
+        position: absolute;
+        top: -22%;
+        left: 56.2%;
+        width: 38.7%;
+        height: 72%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+
+        .banking__component__myaccount__deposit__label {
+            position: absolute;
+            top: 4%;
+            left: 12%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .banking__component__myaccount__deposit__back {
+            position: absolute;
+            top: 5.5%;
+            left: 7.7%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .bbanking__component__myaccount__deposit__solde {
+            .banking__component__myaccount__deposit__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__deposit__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 55%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+            }
+        }
+
+        .banking__component__myaccount__deposit__card {
+            .banking__component__myaccount__deposit__card__img {
+                position: absolute;
+                top: 25.7%;
+                left: 7%;
+                width: 83.2%;
+                height: 45.8%;
+                border: none;
+                border-radius: 0.2vh;
+            }
+            .banking__component__myaccount__deposit__card__number {
+                position: absolute;
+                top: 43.6%;
+                left: 13.3%;
+                color: white;
+                font-size: 1.5vh;
+                letter-spacing: 0.45vh;
+            }
+            .banking__component__myaccount__deposit__card__date {
+                position: absolute;
+                top: 54%;
+                left: 33.6%;
+                color: white;
+                font-size: 1.05vh;
+            }
+            .banking__component__myaccount__deposit__card__name {
+                position: absolute;
+                top: 61.7%;
+                left: 14%;
+                color: white;
+                font-size: 1.05vh;
+                letter-spacing: 0.03vh;
+            }
+        }
+
+        .banking__component__myaccount__deposit__solde {
+            .banking__component__myaccount__deposit__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__deposit__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 19%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+                width: 70%;
+                text-align: right;
+            }
+        }
+
+        .banking__component__myaccount__deposit__montant {
+            .banking__component__myaccount__deposit__montant__label {
+                position: absolute;
+                top: 82.3%;
+                left: 8.4%;
+                color: white;
+                font-size: 0.74vh;
+            }
+            .banking__component__myaccount__deposit__progress {
+                position: absolute;
+                top: 80.1%;
+                left: 8.4%;
+                height: 1.7%;
+                width: 22.3%;
+                max-width: 80.1%;
+                background: linear-gradient(to right, rgba(151, 211, 156, 0.5), #38DC66);
+            }
+            .banking__component__myaccount__deposit__montant__input {
+                position: absolute;
+                top: 72.3%;
+                left: 8.2%;
+                height: 7.2%;
+                width: 78%;
+                border: none;
+                color: white;
+                background: rgba(0, 0, 0, 0.15);
+                z-index: 11;
+                padding-left: 2.8%;
+                font-size: 1.4vh;
+                &::placeholder {
+                    text-align: left;
+                    font-size: 1.4vh;
+                }
+                &:focus {
+                    outline: none;
+                    background: linear-gradient(to bottom, rgba(94, 108, 182, .4), rgba(94, 108, 182, 0.248));
+                }
+            }
+        }
+
+        .banking__component__myaccount__deposit__depot {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 87.2%;
+            left: 8.4%;
+            width: 80.9%;
+            height: 7.6%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 0.95vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 11;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .banking__component__myaccount__withdraw {
+        position: absolute;
+        top: -22%;
+        left: 56.2%;
+        width: 38.7%;
+        height: 72%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+
+        .banking__component__myaccount__withdraw__label {
+            position: absolute;
+            top: 4%;
+            left: 12%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .banking__component__myaccount__withdraw__back {
+            position: absolute;
+            top: 5.5%;
+            left: 7.7%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .bbanking__component__myaccount__withdraw__solde {
+            .banking__component__myaccount__withdraw__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__withdraw__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 55%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__card {
+            .banking__component__myaccount__withdraw__card__img {
+                position: absolute;
+                top: 25.7%;
+                left: 7%;
+                width: 83.2%;
+                height: 45.8%;
+                border: none;
+                border-radius: 0.2vh;
+            }
+            .banking__component__myaccount__withdraw__card__number {
+                position: absolute;
+                top: 43.6%;
+                left: 13.3%;
+                color: white;
+                font-size: 1.5vh;
+                letter-spacing: 0.45vh;
+            }
+            .banking__component__myaccount__withdraw__card__date {
+                position: absolute;
+                top: 54%;
+                left: 33.6%;
+                color: white;
+                font-size: 1.05vh;
+            }
+            .banking__component__myaccount__withdraw__card__name {
+                position: absolute;
+                top: 61.7%;
+                left: 14%;
+                color: white;
+                font-size: 1.05vh;
+                letter-spacing: 0.03vh;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__solde {
+            .banking__component__myaccount__withdraw__solde__label {
+                position: absolute;
+                top: 16.5%;
+                left: 7.9%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__myaccount__withdraw__solde__montant {
+                position: absolute;
+                top: 15.5%;
+                left: 19%;
+                color: white;
+                font-size: 2vh;
+                font-weight: 800;
+                width: 70%;
+                text-align: right;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__montant {
+            .banking__component__myaccount__withdraw__montant__input {
+                position: absolute;
+                top: 72%;
+                left: 8.2%;
+                height: 7.2%;
+                width: 78%;
+                border: none;
+                color: white;
+                background: rgba(0, 0, 0, 0.15);
+                z-index: 11;
+                padding-left: 2.8%;
+                font-size: 1.4vh;
+                &::placeholder {
+                    text-align: left;
+                    padding-left: 2.8%;
+                    font-size: 1.4vh;
+                }
+                &:focus {
+                    outline: none;
+                    background: linear-gradient(to bottom, rgba(94, 108, 182, .4), rgba(94, 108, 182, 0.248));
+                }
+            }
+        }
+
+        .banking__component__myaccount__withdraw__depot {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 89.4%;
+            left: 8.4%;
+            width: 80.9%;
+            height: 7.9%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 0.95vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 11;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__depot__100 {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 80.6%;
+            left: 8.3%;
+            width: 21%;
+            height: 7.8%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 1.15vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__depot__500 {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 80.6%;
+            left: 30.7%;
+            width: 18.7%;
+            height: 7.8%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 1.15vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__depot__1000 {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 80.6%;
+            left: 50.9%;
+            width: 18.7%;
+            height: 7.8%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 1.15vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+
+        .banking__component__myaccount__withdraw__depot__2000 {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 80.6%;
+            left: 70.9%;
+            width: 18.4%;
+            height: 7.8%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 1.15vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .banking__component__transfer {
+        position: absolute;
+        bottom: -22.5%;
+        left: 56.2%;
+        width: 38.7%;
+        height: 71.8%;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 0.2vh;
+
+        .banking__component__transfer__label {
+            position: absolute;
+            top: 5.1%;
+            left: 7.7%;
+            color: white;
+            border-radius: 0.2vh;
+            font-size: 2vh;
+        }
+
+        .banking__component__transfer__iban {
+            .banking__component__transfer__iban__label {
+                position: absolute;
+                top: 15.5%;
+                left: 8.2%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__transfer__iban__input {
+                position: absolute;
+                top: 21.8%;
+                left: 8.1%;
+				height: 7.2%;
+				width: 80.1%;
+				border: none;
+				color: white;
+				background: rgba(0, 0, 0, 0.15);
+                padding-left: 2.8%;
+                font-size: 1.4vh;
+                &::placeholder {
+                    text-align: left;
+                    padding-left: 2.8%;
+                    font-size: 1.4vh;
+                }
+                &:focus {
+                    outline: none;
+                    background: linear-gradient(to bottom, rgba(94, 108, 182, .4), rgba(94, 108, 182, 0.248));
+                }
+            }
+        }
+
+        .banking__component__transfer__montant {
+            .banking__component__transfer__montant__label {
+                position: absolute;
+                top: 33.5%;
+                left: 8%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__transfer__montant__input {
+                position: absolute;
+                top: 39.9%;
+                left: 8.1%;
+				height: 7.2%;
+				width: 80.1%;
+				border: none;
+				color: white;
+				background: rgba(0, 0, 0, 0.15);
+                padding-left: 2.8%;
+                font-size: 1.4vh;
+                &::placeholder {
+                    text-align: left;
+                    padding-left: 2.8%;
+                    font-size: 1.4vh;
+                }
+                &:focus {
+                    outline: none;
+                    background: linear-gradient(to bottom, rgba(94, 108, 182, .4), rgba(94, 108, 182, 0.248));
+                }
+            }
+        }
+
+        .banking__component__transfer__message {
+            .banking__component__transfer__message__label {
+                position: absolute;
+                top: 53%;
+                left: 8.1%;
+                color: white;
+                font-size: 1.25vh;
+            }
+            .banking__component__transfer__message__input {
+                position: absolute;
+                top: 59%;
+                left: 8.1%;
+				height: 12.6%;
+				width: 75.5%;
+				border: none;
+				color: white;
+				background: rgba(0, 0, 0, 0.15);
+                padding: 2.8%;
+                font-size: 1.4vh;
+                overflow: hidden;
+                &::placeholder {
+                    text-align: left;
+                    padding-left: 2.8%;
+                    font-size: 1.4vh;
+                }
+                &:focus {
+                    outline: none;
+                    background: linear-gradient(to bottom, rgba(94, 108, 182, .4), rgba(94, 108, 182, 0.248));
+                }
+            }
+        }
+
+        .banking__component__transfer__valider {
+            transition-duration: 500ms;
+            position: absolute;
+            top: 82.8%;
+            left: 7.9%;
+            width: 83.9%;
+            height: 7.8%;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0.2vh;
+            font-size: 1.1vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                transition-duration: 500ms;
+                background: linear-gradient(180deg, #33963c 0%, rgb(30, 180, 90) 100%);
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.orgaManagementMenu {
+  width: 0;
+
+  .activityName {
+    scale: var(--scale);
+    transform-origin: bottom right;
+    width: 1048px;
+    height: 143px;
+    position: absolute;
+    right: 0;
+    bottom: 63px;
+    font-size: 70px;
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+    box-sizing: border-box;
+    gap: 25px;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .container {
+    width: 491px;
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100vh / var(--scale)) !important;
+    scale: var(--scale) !important;
+    transform-origin: left top;
+
+    .headerImage {
+      width: 491px;
+      height: 99px;
+      object-fit: contain;
+    }
+  }
+}

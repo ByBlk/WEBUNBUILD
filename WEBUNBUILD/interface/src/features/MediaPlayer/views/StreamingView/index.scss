@@ -1,0 +1,129 @@
+// Control media container
+
+.control-media-container {
+    margin: 23px 0 26px 0;
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.control-media {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    button:first-child p {
+        font-weight: 600;
+    }
+}
+
+.control-media-button {
+    position: relative;
+    background: none;
+    border: none;
+    width: 32%;
+    height: 202px;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.81) 100%, );
+        opacity: 20%;
+        inset: 0;
+        z-index: 10;
+    }
+
+    p {
+        position: relative;
+        z-index: 20;
+        text-align: center;
+    }
+
+    .play {
+        background: linear-gradient(90deg, rgba(30,180,90,0.58) 0%, rgba(56,220,102,1) 100%);
+    }
+
+    &:hover {
+        font-weight: 600;
+    }
+}
+
+
+.control-media-button:hover {
+
+    .play {
+        opacity: 50%;
+    }
+    
+    .next {
+        background: linear-gradient(90deg, rgba(180, 158, 30, 0.58) 0%, rgb(220, 195, 56) 100%);
+        opacity: 50%;
+    }
+
+    .stop {
+        background: linear-gradient(90deg, rgba(180, 30, 30, 0.58) 0%, rgb(220, 56, 56) 100%);
+        opacity: 50%;
+    }
+}
+
+// Contole volume container
+
+.control-volume-container {
+    width: 100%;
+
+    .control-volume-value {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 14px;
+        align-items: center;
+    }
+}
+
+
+// Video display container
+
+.video-display-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 30px;
+
+    .video-info {
+        padding: 32px;
+
+        iframe {
+            width: 337px;
+            height: 190px;
+            pointer-events: none;
+        }
+
+        .video-artiste {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        .video-title {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 5px 0 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .video-time {
+            font-size: 12px;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+}

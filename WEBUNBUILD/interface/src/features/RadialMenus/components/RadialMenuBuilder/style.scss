@@ -1,0 +1,210 @@
+.radialMenu {
+	margin: auto;
+	border-radius: 1000px;
+	clip-path: url(#doughnut-path);
+	position: relative;
+	top: calc(50% - 250px);
+
+	scale: var(--scale) !important;
+	transform-origin: center center;
+
+	& .button {
+		background: rgba(0, 0, 0, 0.65);
+		display: flex;
+		justify-content: center;
+		height: 40%;
+		margin: auto;
+		padding: 10%;
+		cursor: pointer;
+		pointer-events: all;
+		padding-top: 9%;
+
+		&:hover {
+			background: radial-gradient(490px, rgba(94, 108, 182, .4) 0%, rgba(94, 108, 182, 0.62) 49%, rgba(94, 109, 182, .8) 1%, rgba(94, 108, 182, .8) 100%) center 0px;
+			background-size: 500px 500px;
+
+			& span {
+				// background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+				// -webkit-background-clip: text;
+				// -webkit-text-fill-color: transparent;
+				// padding-top: 3px;
+				font-weight: 500;
+			}
+
+			& svg * {
+				// fill: url(#gradient);
+			}
+		}
+
+		&Container {
+			height: 100%;
+			width: 100%;
+			border-radius: 1000px;
+			position: absolute;
+			transform-origin: center 50%;
+			pointer-events: none;
+		}
+
+		&Content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			font-family: "Montserrat";
+			font-style: normal;
+			text-align: center;
+			height: 20%;
+			font-weight: 600;
+
+			color: #ffffff;
+
+			text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+			.w-icon {
+				font-size: 14px;
+
+				&:hover {
+					color: white;
+					font-weight: 600;
+				}
+			}
+
+			.n-icon {
+				font-size: 14px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	&.size5 .button {
+		clip-path: polygon(50% 82%, -4% -1%, 104% -6%);
+	}
+
+	&.size4 .button {
+		clip-path: polygon(50% 83%, -11% 0%, 112% -2%);
+	}
+
+	&.size3 .button {
+		clip-path: polygon(50% 84%, -30% 0%, 141% 0%);
+	}
+
+	&.size2 .button {
+		clip-path: polygon(0% 0%, 0% 83%, 100% 84%, 100% 0%);
+		width: 400px !important;
+	}
+
+	&.size1 .button {
+		clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+		width: 400px !important;
+		height: 100%;
+
+		&Content {
+			margin-top: -20px;
+		}
+	}
+}
+
+.radial-menu-container {
+	position: relative;
+	margin: auto;
+	height: 100%;
+	background-color: #00000045;
+
+	& .pointer {
+		position: fixed;
+		width: 1px;
+		height: 1px;
+		left: 50%;
+		top: 50%;
+	}
+
+	& .arrow {
+		height: 135px;
+		z-index: 1;
+		position: absolute;
+		transform-origin: bottom center;
+		pointer-events: none;
+
+		scale: var(--scale) !important;
+	}
+
+	& .middle {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		pointer-events: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		transform: translateY(-30px);
+		z-index: 1;
+	}
+
+	& .title {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 24px;
+		line-height: 29px;
+		/* identical to box height */
+		transform: translateY(20px);
+
+		text-align: center;
+
+		background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.69) 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		text-fill-color: transparent;
+
+		text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+		// 1000% for better looking in responsive !
+		// min-height: 1000% !important;
+		scale: var(--scale) !important;
+		transform-origin: center center;
+	}
+
+	& .key {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #373737;
+
+		text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+
+		background-color: white;
+		border-radius: 3px;
+		width: fit-content;
+		padding: 0 2px;
+		height: 18px;
+		margin-right: 3px;
+	}
+
+	& .close {
+		display: flex;
+		align-items: center;
+
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+
+		text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+		color: white;
+
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

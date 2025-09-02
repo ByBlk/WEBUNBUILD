@@ -1,0 +1,455 @@
+.craft-header {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 40%) 0%, rgba(50, 50, 50, 0%) 100%), linear-gradient(90deg, rgba(0, 0, 0, 40%) 0%, rgba(10, 10, 10, 32%) 100%);
+    border-radius: 2px;
+    padding-left: 20px;
+
+    img {
+        margin-right: 1.5vw;
+        height: 2vh;
+    }
+
+    p {
+        font-size: 1.75vh;
+        color: white;
+    }
+}
+
+.container-craft {
+    position: absolute;
+    display: flex;
+    top: 13vh;
+    left: 5.5vw;
+
+    .recipes {
+        width: 25vw;
+        height: 70vh;
+    
+        .items {
+            margin-top: .5vh;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: .75vh;
+            column-gap: .25vw;
+            height: 65vh;
+            overflow: scroll;
+    
+            .item {
+                display: flex;
+                background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                width: 12.35vw;
+                height: 8.5vh;
+                align-items: center;
+                cursor: pointer;
+
+                &:hover {
+                    background: linear-gradient(180deg, rgba(94, 108, 182, 0.25) 0%, rgba(94, 108, 182, 0.40) 100%) !important;
+
+                    img, p {
+                        transition-duration: 250ms;
+                        transform: scale(1.1);
+                    }
+                }
+
+                &.selected {
+                    background: linear-gradient(180deg, rgba(94, 108, 182, 0.40) 0%, rgba(41, 47, 80, 0.40) 100%);
+                }
+        
+                img {
+                    transition-duration: 250ms;
+                    margin-left: 1.5vw;
+                    height: 7.5vh;
+                }
+        
+                p {
+                    transition-duration: 250ms;
+                    text-align: center;
+                    width: 6.5vw;
+                    font-size: 1.5vh;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2vw;
+        width: 33.5vw;
+        
+        .table {
+            height: 28.5vh;
+
+            .infos {
+                display: flex;
+                margin-top: .5vh;
+
+                .selected {
+                    display: flex;
+                    position: relative;
+                    background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                    width: 12.5vw;
+                    height: 13.5vh;
+                    align-items: center;
+            
+                    .time {
+                        font-size: 1vh;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 3vw;
+                        height: 3vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        color: white;
+
+                        img {
+                            margin: 0;
+                            height: 1.5vh;
+                        }
+
+                        div {
+                            width: 1.5vw;
+                            text-align: center;
+                        }
+                    }
+
+                    img {
+                        margin-left: 1vw;
+                        height: 10vh;
+                    }
+
+                    p {
+                        text-align: center;
+                        width: 5.5vw;
+                        font-size: 1.4vh;
+                        color: white;
+                    }
+            
+                    .quantity {
+                        display: flex;
+                        gap: .1vw;
+                        justify-content: center;    
+
+                        input {
+                            text-align: center;
+                            width: 2vw;
+                            height: 2vh;
+                            font-size: 1.25vh;
+                            color: white;
+                            background: rgba(0, 0, 0, 0.35);
+                            border: none;
+                            padding: 0;
+                        }
+
+                        div {
+                            cursor: pointer;
+                            background: rgba(0, 0, 0, 0.35);
+                            color: white;
+                            width: 1vw;
+                            height: 2vh;
+                            text-align: center;
+                            font-size: 1.5vh;
+
+                            &:hover {
+                                background: linear-gradient(180deg, rgba(94, 108, 182, 0.25) 0%, rgba(94, 108, 182, 0.40) 100%);
+                            }
+                        }
+                    }
+                }
+
+                .recipe {
+                    margin-left: .35vw;
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 20.75vw;
+                    row-gap: .45vh;
+                    column-gap: .15vw;
+
+                    .item {
+                        display: flex;
+                        background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                        align-items: center;
+                        height: 4.1vh;
+                        width: 10.25vw;
+                        color: white;
+                        font-size: 1.4vh;
+
+                        &.disabled {
+                            color: rgb(200, 200, 200);
+                        }
+
+                        .amount {
+                            background: linear-gradient(180deg, rgba(18, 18, 18, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+                            text-align: center;
+                            width: 2.5vw;
+                            line-height: 4.1vh;
+                        }
+
+                        .label {
+                            width: 7.75vw;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .craft {
+                position: absolute;
+                margin-top: .5vh;
+                display: flex;
+                height: 8.75vh;
+                width: 33.5vw;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(180deg, rgba(56, 220, 102, 0.30) 0%, rgba(51, 150, 60, 0.30) 100%);
+                color: white;
+                font-size: 2vh;
+                cursor: pointer;
+
+                div {
+                    transition-duration: 250ms;
+                }
+
+                &:hover {
+                    background: linear-gradient(180deg, rgba(56, 220, 102, 0.40) 0%, rgba(51, 150, 60, 0.40) 100%);
+
+                    div {
+                        transition-duration: 250ms;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .items {
+                margin-top: .5vh;
+                display: flex;
+                height: 8.75vh;
+                justify-content: space-between;
+
+                .item {
+                    display: flex;
+                    background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                    height: 8.75vh;
+                    width: 5.4vw;
+                    justify-content: center;
+                    align-items: center;
+
+                    &.disabled {
+                        filter: grayscale(100%);
+                        
+                        img {
+                            opacity: 0.5;
+                        }
+                    }
+
+                    img {
+                        transition-duration: 250ms;
+                        height: 8.75vh;
+                    }
+
+                    &:not(.disabled) {
+                        cursor: pointer;
+
+                        &:hover {
+                            img {
+                                transition-duration: 250ms;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .waiting-list {
+            margin-top: 2.5vh;
+            height: 39vh;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                height: 34.5vh;
+                overflow: scroll;
+                color: white;
+
+                .finished-item {
+                    margin-top: 1vh;
+                    display: flex;
+                    height: 9vh;
+                    background: linear-gradient(180deg, rgba(56, 220, 102, 0.20) 0%, rgba(51, 150, 60, 0.20) 100%);
+                    align-items: center;
+
+                    .bar {
+                        height: 9vh;
+                        width: .75vw;
+                        background: linear-gradient(180deg, rgba(56, 220, 102, 0.40) 0%, rgba(51, 150, 60, 0.40) 100%);
+                    }
+
+                    img {
+                        transition-duration: 250ms;
+                        margin-left: 3.25vw;
+                        height: 9vh;
+                    }
+
+                    .infos {
+                        transition-duration: 250ms;
+                        text-align: center;
+                        width: 12.5vw;
+                        margin-left: 1vw;
+                        font-size: 1.6vh;
+
+                        span {
+                            font-weight: bolder;
+                        }
+                    }
+
+                    .recup {
+                        transition-duration: 250ms;
+                        margin-left: 3vw;
+                        font-size: 1.6vh;
+                    }
+
+                    &:hover {
+                        .infos, .recup, img {
+                            transition-duration: 250ms;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .progress-item {
+                    margin-top: 1vh;
+                    position: relative;
+                    display: flex;
+                    height: 9vh;
+                    width: 33.5vw;
+                    background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                    align-items: center;
+
+                    .bar {
+                        position: absolute;
+                        bottom: 0;
+                        width: 33.5vw;
+                        height: 1vh;
+                        background: linear-gradient(180deg, rgba(18, 18, 18, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+
+                        .progress-craft {
+                            height: 1vh;
+                            background: linear-gradient(90deg, rgba(255, 255, 255, 0.70) 0%, #FFF 100%);
+                        }
+                    }
+
+                    img {
+                        margin-left: 4vw;
+                        height: 9vh;
+                    }
+
+                    .infos {
+                        text-align: center;
+                        width: 12.5vw;
+                        margin-left: 1vw;
+                        font-size: 1.6vh;
+
+                        span {
+                            font-weight: bolder;
+                        }
+                    }
+
+                    .time {
+                        margin-left: 4vw;
+                        font-size: 1.6vh;
+                    }
+                }
+            }
+        }
+    }
+
+    .inventory {
+        margin-left: 2.25vw;
+        width: 25vw;
+        height: 70vh;
+
+        .items {
+            margin-top: .5vh;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: .25vw;
+            row-gap: .4vh;
+            height: 65vh;
+            overflow: scroll;
+
+            .item {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                background: linear-gradient(180deg, rgba(18, 18, 18, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+                width: 6.05vw;
+                height: 11vh;
+                align-items: center;
+                cursor: pointer;
+                color: white;
+
+                img {
+                    transition-duration: 250ms;
+                    height: 8.5vh;
+                }
+
+                &:hover {
+                    background: linear-gradient(180deg, rgba(94, 108, 182, 0.25) 0%, rgba(94, 108, 182, 0.40) 100%) !important;
+
+                    img {
+                        transition-duration: 250ms;
+                        transform: scale(1.1);
+                    }
+                }
+                
+                &.using {
+                    background: linear-gradient(180deg, rgba(94, 108, 182, 0.40) 0%, rgba(41, 47, 80, 0.40) 100%);
+                }
+
+                &.error {
+                    background: linear-gradient(180deg, rgba(255, 0, 0, 0.25) 0%, rgba(255, 0, 0, 0.40) 100%) !important;
+                    animation: shake 0.5s;
+                }
+
+                .amount {
+                    font-size: 1vh;
+                    position: absolute;
+                    right: 0;
+                    background: linear-gradient(rgba(18, 18, 18, .4), rgba(0, 0, 0, .4));
+                    width: 1.4vw;
+                    height: 2.5vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .label {
+                    text-align: center;
+                    width: 6vw;
+                    font-size: 1.3vh;
+                }
+            }
+        }
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-.1vh);
+    }
+    50% {
+        transform: translateX(.1vh);
+    }
+    75% {
+        transform: translateX(-.1vh);
+    }
+}

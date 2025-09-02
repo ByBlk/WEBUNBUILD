@@ -1,0 +1,87 @@
+.PPA {
+    width: 500px;
+    aspect-ratio: 1697 / 1042;
+    margin: 100px;
+    position: relative;
+
+    & .Background {
+        width: 100%;
+        height: 100%;
+    }
+
+	& .photo {
+		position: absolute;
+		left: 17px;
+		top: 80px;
+		height: 153px;
+		width: 113px;
+		border: 1px solid black;
+
+		background-size: cover;
+		background-position: center;
+		background-color: #86B8F2;
+	}
+
+	& .item-container {
+		height: auto;
+		width: 187px;
+
+		position: absolute;
+		top: 92px;
+		left: 298px;
+
+		& .item {
+			color: #242424;
+			font-family: Montserrat;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 600;
+			padding-bottom: 4.8px;
+		}
+	}
+
+	& .issuer {
+		position: absolute;
+		top: 249px;
+		left: 363px;
+		width: 113px;
+		text-align: center;
+		font-weight: 600;
+		font-family: "Creattion";
+	}
+
+	& .signature {
+		position: absolute;
+		top: 242px;
+		left: 12px;
+		width: 134px;
+		text-align: center;
+		font-weight: 600;
+		font-family: "Creattion";
+	}
+
+	& .inline-item {
+		position: absolute;
+		
+		text-transform: uppercase;
+		color: #242424;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 600;
+		text-align: center;
+
+		&.ori {
+			top: 189px;
+			left: 298px;
+			width: 62px;
+		}
+	
+		&.cii {
+			top: 189px;
+			left: 409px;
+			width: 76px;
+		}
+	}
+
+}

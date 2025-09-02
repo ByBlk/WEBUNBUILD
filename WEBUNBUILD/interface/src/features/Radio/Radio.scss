@@ -1,0 +1,49 @@
+@font-face {
+	font-family: "DigialNumbers";
+	src: url("../../assets/fonts/DigitalNumbers-Regular.ttf");
+}
+
+#radio {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+
+	width: 266px;
+	height: 695px;
+
+	/* UI Properties */
+	// background: transparent "https://cdn.eltrane.cloud/3838384859/old_a_trier/radio/radio@2x.webp') 0% 0% no-repeat padding-box;
+	opacity: 1;
+
+	.display {
+		display: flex;
+		flex-direction: column;
+
+		position: absolute;
+		top: 339px;
+		left: 69px;
+
+		width: 116px;
+		height: 85px;
+		padding: 7.5px;
+
+		.buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			position: absolute;
+			top: 65px;
+			left: 0px;
+
+			margin-top: 42.5px;
+			height: 45px;
+			width: 100%;
+
+			img:hover {
+				opacity: 0.7;
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,0 +1,1337 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap");
+@-webkit-keyframes slide-in {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-up {
+    0% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes path {
+    from {
+        stroke-dashoffset: -480;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes bannerAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    5% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    95% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes contentUnfold {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes countdown {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes loading {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(100px);
+        scale: 0.9;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes anim {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    16% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    18% {
+        opacity: 1;
+        width: 100%;
+        transform: translateY(0%);
+    }
+    90% {
+        width: 0%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes progressbarfixe {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    16% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    18% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(200%);
+    }
+}
+
+@keyframes newssocietymain {
+    0% {
+        opacity: 0;
+        width: 250px;
+        background: transparent;
+    }
+    5% {
+        opacity: 1;
+        width: 250px;
+        background: transparent;
+    }
+    10% {
+        opacity: 1;
+        width: fit-content;
+    }
+    90% {
+        opacity: 1;
+        width: fit-content;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        width: fit-content;
+        transform: translateY(200%);
+    }
+}
+
+@keyframes newssocietyimg {
+    0% {
+        transform: translateY(100%);
+    }
+    5% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes newssocietyinfo {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes newssocietyinfoname {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    10% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    12% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes newssocietyinfophone {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    12% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    14% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes newssocietyinfophonelogo {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    12% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    14% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes newssocietyinfotype {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    14% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    16% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes newssocietyinfomsg {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    16% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    18% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(100px);
+        scale: 0.9;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes timing {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+.notificationContainer {
+    position: absolute;
+    width: 20%;
+    height: 77%;
+    z-index: -1;
+    .notification {
+        display: flex;
+        border-radius: 2px;
+        align-items: center;
+        min-height: 29px;
+        position: relative;
+        max-width: 24vh;
+        left: 2%;
+        overflow: hidden;
+        animation: fade-in 1s;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .left {
+        margin-left: 17px;
+        border-radius: 50%;
+        margin-bottom: 2px;
+    }
+    .icon__wrapper {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 2px;
+        padding-right: 1px;
+        background: #252525;
+    }
+    .right {
+        margin-right: 27px;
+        margin-left: 15px;
+        color: rgb(255, 255, 255);
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        padding: 2px 0;
+        white-space: pre-line;
+    }
+    .timer {
+        z-index: 10000;
+        position: absolute;
+        background-color: #72706f;
+        width: 100%;
+        height: 6px;
+        bottom: -3px;
+    }
+    .track {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: #fdfdfd;
+        animation: timing linear forwards;
+        height: 100%;
+    }
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 33px;
+        height: 44px;
+        width: 100%;
+        background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.363) 1.27%, rgba(0, 0, 0, 0.363) 99.96%);
+        color: #ffffff;
+        padding: 4px 0;
+    }
+    .reason {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.5px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        padding: 3px 5px;
+        background: linear-gradient(180deg, rgba(51, 150, 60, 0.6) 0%, rgba(56, 220, 102, 0.6) 100%);
+        color: white;
+        border-radius: 3.94257px;
+        margin: 0 5px 0 auto;
+    }
+    .police {
+        display: flex;
+        flex-direction: column;
+        width: 11vw;
+        max-width: 11vw;
+        height: 114px;
+        background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.349) 1.27%, rgba(0, 0, 0, 0.349) 93.28%, rgba(0, 0, 0, 0.275) 99.95%, rgba(0, 0, 0, 0) 99.96%);
+        position: relative;
+    }
+    .line {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 22px;
+        height: 25px;
+        color: rgba(255, 255, 255, 0.95);
+        & img {
+            margin: 0 8px !important;
+        }
+    }
+    .police img {
+        margin: 8px;
+        width: 25px;
+        height: auto;
+    }
+    .police .main {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .distance {
+        position: absolute;
+        right: 25px;
+        bottom: 15px;
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+        border-radius: 3.94257px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 2px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        line-height: 18px;
+        color: #ffffff;
+    }
+    .distancepnj {
+        position: absolute;
+        right: 15px;
+        bottom: 40px;
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+        border-radius: 3.94257px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 2px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        line-height: 18px;
+        color: #ffffff;
+    }
+    .yellow {
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+    }
+    .red {
+        background: linear-gradient(180deg, rgba(255, 0, 0, 0.6) 0%, rgba(199, 47, 47, 0.6) 100%);
+    }
+    .green {
+        background: linear-gradient(180deg, rgba(20, 198, 36, 0.7) 0%, rgba(30, 180, 90, 0.406) 100%);
+    }
+    .main {
+        background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.6) 1.27%, rgba(0, 0, 0, 0.6) 99.96%);
+        padding: 7px 0;
+        width: 100%;
+    }
+    .showAnnonce {
+        width: 19vw;
+        max-width: 13.5vw;
+        height: 90px;
+        border-radius: 6px;
+        overflow: hidden;
+        min-height: 90px;
+        & .img {
+            position: relative;
+            z-index: 3;
+            width: 85px;
+            height: 95px;
+            overflow: hidden;
+            display: flex;
+            object-fit: cover;
+            background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.55) 1.27%, rgba(0, 0, 0, 0.289323) 93.28%, rgba(0, 0, 0, 0.275) 99.95%, rgba(0, 0, 0, 0) 99.96%);
+            & img {
+                width: 90px;
+                height: 100%;
+                object-fit: cover;
+                transform: translate(-3px, 0);
+                margin: auto;
+            }
+        }
+        & .infos {
+            position: relative;
+            z-index: 2;
+            padding-left: 5px;
+            width: calc(100% - 85px);
+            height: 100%;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.55) 1.27%, rgba(0, 0, 0, 0.289323) 93.28%, rgba(0, 0, 0, 0.275) 99.95%, rgba(0, 0, 0, 0) 99.96%);
+            animation: 8s ease-in-out newssocietyinfo;
+            & .name {
+                margin-top: 5px;
+                margin-bottom: 2px;
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+        }
+        & .fermeture,
+        & .ouverture,
+        & .information {
+            margin-top: -3px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 3px;
+            width: fit-content;
+        }
+        & .alerte {
+            margin-top: -3px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 3px;
+            width: fit-content;
+        }
+        & .intervention {
+            margin-top: -3px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 3px;
+            width: fit-content;
+        }
+        & .administration {
+            margin-top: -3px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 3px;
+            width: fit-content;
+        }
+        & .fermeture {
+            background: linear-gradient(180deg, rgba(253, 127, 127, 0.5) 0%, rgba(241, 62, 62, 0.5) 55.73%, rgba(224, 31, 31, 0.5) 100%);
+        }
+        & .ouverture {
+            background: linear-gradient(180deg, rgba(56, 220, 102, 0.4) 0%, rgba(51, 150, 60, 0.4) 100%);
+        }
+        & .information {
+            background: linear-gradient(180deg, rgba(251, 188, 4, 0.55) 0%, rgba(251, 157, 4, 0.55) 100%);
+        }
+        & .alerte {
+            background: linear-gradient(180deg, rgba(253, 127, 127, 0.5) 0%, rgba(241, 62, 62, 0.5) 55.73%, rgba(224, 31, 31, 0.5) 100%);
+        }
+        & .intervention {
+            background: linear-gradient(180deg, rgba(127, 161, 253, 0.5) 0%, rgba(62, 74, 241, 0.5) 55.73%, rgba(31, 98, 224, 0.5) 100%);
+        }
+        & .administration {
+            background: linear-gradient(180deg, rgba(253, 127, 127, 0.5) 0%, rgba(241, 62, 62, 0.5) 55.73%, rgba(224, 31, 31, 0.5) 100%);
+        }
+        & .message {
+            display: flex;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            justify-content: start;
+            align-items: start;
+            font-size: 11px;
+            padding-right: 2px;
+            color: #ffffff;
+            word-break: break-word;
+        }
+        & .phone {
+            position: absolute;
+            background: linear-gradient(180deg, rgba(56, 220, 102, 0.6) 0%, rgba(51, 150, 60, 0.6) 100%);
+            border-radius: 2px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 12px;
+            color: white;
+            padding: 3px;
+            position: absolute;
+            top: 4px;
+            right: 18px;
+        }
+        & .phonelogo {
+            position: absolute;
+            height: 16px;
+            right: 5px;
+            top: 4px;
+        }
+        & .cProgressbar {
+            width: 100%;
+            height: 5px;
+            border-radius: 0 0 6px 6px;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 74.73%, rgba(0, 0, 0, 0.579167) 83.15%, rgba(0, 0, 0, 0.589518) 97.5%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+    .notistack-SnackbarContainer {
+        flex-direction: column !important;
+        bottom: 2% !important;
+        left: 24px !important;
+    }
+    .notistack-SnackbarContainer {
+        bottom: 20% !important;
+    }
+    .notification.--special-color .special-color {
+        background-image: var(--color);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .notification .left {
+        background: var(--color);
+    }
+    .notification .special-key {
+        background-color: white;
+        color: black;
+        padding: 1.3px 3px;
+        border-radius: 3px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        font-weight: 900;
+        margin: 0 3px;
+    }
+    .special-key {
+        border-radius: 3px !important;
+    }
+    .left {
+        margin-left: 7px;
+        border-radius: 50%;
+        margin-bottom: 2px;
+    }
+    .right {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: rgb(255, 255, 255);
+        font-family: "Montserrat", sans-serif;
+        font-size: 10.5px;
+        text-transform: uppercase;
+        font-weight: 400; //750 avant
+        margin-bottom: 1px;
+        padding: 2px 0;
+        white-space: pre-line;
+        line-height: 19.2px;
+        word-break: break-word;
+    }
+    .timer {
+        position: absolute;
+        background-color: #00000065;
+        width: 100%;
+        height: 6px;
+        bottom: -3px;
+    }
+    .timer::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        background-color: #fdfdfd;
+        width: var(--porcentage);
+        height: 100%;
+    }
+    .reason {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8.5px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        padding: 3px 5px;
+        background: linear-gradient(180deg, rgba(51, 150, 60, 0.6) 0%, rgba(56, 220, 102, 0.6) 100%);
+        color: white;
+        border-radius: 3.94257px;
+        margin: 0 5px 0 auto;
+    }
+    .police {
+        display: flex;
+        flex-direction: column;
+        width: 11vw;
+        max-width: 11vw;
+        height: 114px;
+        // background: linear-gradient(90.05deg,
+        //     rgba(0, 0, 0, 0.55) 1.27%,
+        //     rgba(0, 0, 0, 0.450972) 99.96%);
+        position: relative;
+    }
+    .line {
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 22px;
+        height: 25px;
+        color: rgba(255, 255, 255, 0.95);
+        & img {
+            margin: 0 8px !important;
+        }
+    }
+    .police img {
+        margin: 8px;
+        width: 25px;
+        height: auto;
+    }
+    .police .main {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .distance {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+        border-radius: 3.94257px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10.5px;
+        padding: 2px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        line-height: 18px;
+        color: #ffffff;
+    }
+    .distancepnj {
+        position: absolute;
+        right: 15px;
+        bottom: 40px;
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+        border-radius: 3.94257px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        padding: 2px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        line-height: 18px;
+        color: #ffffff;
+    }
+    .yellow {
+        background: linear-gradient(180deg, rgba(251, 157, 4, 0.6) 0%, rgba(251, 188, 4, 0.6) 100%);
+    }
+    .red {
+        background: linear-gradient(180deg, rgba(255, 0, 0, 0.6) 0%, rgba(199, 47, 47, 0.6) 100%);
+    }
+    .green {
+        background: linear-gradient(180deg, rgba(20, 198, 36, 0.7) 0%, rgba(30, 180, 90, 0.406) 100%);
+    }
+    .main {
+        background: rgba(180, 180, 180, 0.18);
+        padding: 7px 0;
+        width: 100%;
+    }
+    .A-SlideIn {
+        -webkit-animation: slide-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .A-SlideInBottom {
+        animation: slide-in-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .A-BounceIn {
+        animation-name: bounceIn;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+    }
+    .A-FadeInRight {
+        animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .A-FadeInLeft {
+        animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .A-FadeInUp {
+        animation: fade-in-up 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .A-ScaleUp {
+        animation: scale-up-center 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+    .A-FadeIn {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+    ._notification {
+        width: fit-content;
+        width: 265px;
+        min-height: 48px;
+        border-radius: 2px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        display: flex;
+        align-items: center;
+        bottom: -5px;
+        left: 0.5vw;
+        position: relative;
+        overflow: hidden;
+        animation: fade-in 1s;
+        & .notifTag {
+            margin-top: 3px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            border-radius: 2px;
+            color: rgba(255, 255, 255, 0.95);
+            padding: 3px;
+            min-width: 30px;
+            font-family: "Lato";
+            padding: 2px 8px;
+            text-align: center;
+            width: fit-content;
+            text-transform: uppercase;
+        }
+        &.rouge {
+            .img {
+                background: linear-gradient(to bottom, rgba(213, 23, 23, 0.9), rgba(234, 12, 12, 0.8));
+            }
+            .timer {
+                background: linear-gradient(to bottom, rgba(213, 23, 23, 0.473), rgba(234, 12, 12, 0.582)), #00000085;
+            }
+            & .infos {
+                background: linear-gradient(to bottom, rgba(213, 23, 23, 0.473), rgba(234, 12, 12, 0.582)), linear-gradient(to right, rgba(0, 0, 0, .50), rgba(0, 0, 0, .25));
+                & .notifTag {
+                    background: linear-gradient(to bottom, rgba(90, 6, 6, 0.30), rgba(53, 0, 0, 0.35));
+                }
+            }
+        }
+        &.noir {
+            .timer {
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.164)), #00000085;
+            }
+            & .infos {
+                background: linear-gradient(to right, rgba(0, 0, 0, .50), rgba(0, 0, 0, 0.35));
+                & .notifTag {
+                    background: linear-gradient(to bottom, rgba(32, 32, 32, 0.35), rgba(0, 0, 0, 0.23));
+                }
+            }
+        }
+        &.vert {
+            .timer {
+                background: linear-gradient(to bottom, rgba(36, 190, 93, 0.34), rgba(49, 209, 99, 0.44)), #00000085;
+            }
+            & .infos {
+                background: linear-gradient(to bottom, rgba(36, 190, 93, 0.34), rgba(49, 209, 99, 0.44)), linear-gradient(to right, rgba(0, 0, 0, .50), rgba(0, 0, 0, .25));
+                & .notifTag {
+                    background: linear-gradient(to bottom, rgba(0, 52, 19, 0.30), rgba(0, 33, 10, 0.40));
+                }
+            }
+        }
+        &.jaune {
+            .timer {
+                background: linear-gradient(to bottom, rgba(251, 194, 4, 0.32), rgba(251, 189, 4, 0.42)), #00000085;
+            }
+            & .infos {
+                background: linear-gradient(to bottom, rgba(251, 194, 4, 0.32), rgba(251, 189, 4, 0.42)), linear-gradient(to right, rgba(0, 0, 0, .50), rgba(0, 0, 0, .25));
+                & .notifTag {
+                    background: linear-gradient(to bottom, rgba(251, 194, 4, 0.25), rgba(251, 189, 4, 0.35));
+                }
+            }
+        }
+        &.custom {
+            .timer {
+                background: linear-gradient(to bottom, var(--bgStart), var(--bgEnd)), #00000085;
+            }
+            & .infos {
+                background: linear-gradient(to bottom, var(--bgStart), var(--bgEnd)), linear-gradient(to right, rgba(0, 0, 0, .50), rgba(0, 0, 0, .25));
+                & .notifTag {
+                    background: linear-gradient(to bottom, var(--tagStart), var(--tagEnd));
+                }
+            }
+        }
+    }
+    .holder {
+        opacity: 0 !important;
+        transition: none !important;
+        animation: none !important;
+        & * {
+            transition: none !important;
+            animation: none !important;
+        }
+    }
+    .WeazelNewsShow {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 500px;
+        overflow: hidden;
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        animation: bannerAppear 11s ease-in-out;
+        opacity: 0;
+        transform: translateX(100%);
+        &.preview {
+            animation: none;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        & .preview {
+            position: absolute;
+            width: 100%;
+            background: rgba(255, 94, 0, 0.75);
+            padding: 10px 0;
+            & span {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: #ffffff;
+            }
+        }
+        & .content {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            height: 480px;
+        }
+        & .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            gap: 20px;
+            padding: 23px 20px;
+            & .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                min-width: 100px;
+                height: 30px;
+                gap: 5px;
+                padding: 0 20px;
+                color: rgba(255, 255, 255, 0.9);
+                background: linear-gradient(180deg, rgba(44, 44, 44, 0.616) 0%, rgba(31, 31, 31, 0.493) 100%);
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.247);
+                font-size: 12px;
+                text-transform: uppercase;
+                & span {
+                    word-wrap: break-word;
+                    text-align: center;
+                }
+                & img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            & .inter-btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: fit-content;
+                min-width: 200px;
+                height: 30px;
+                gap: 10px;
+                font-size: 12px;
+                color: rgba(255, 255, 255, 1);
+                background: linear-gradient(180deg, rgba(56, 220, 102, 0.3) 0%, rgba(0, 99, 28, 0.3) 100%);
+                & .icon {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 12px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    background: linear-gradient(180deg, rgba(56, 220, 102, 0.5) 0%, rgba(0, 99, 28, 0.5) 100%);
+                }
+                & .text {
+                    width: 75%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-right: 10px;
+                }
+            }
+        }
+        & .countdownbar {
+            position: absolute;
+            bottom: 0;
+            width: 0%;
+            height: 5px;
+            background: #fdfdfd;
+            animation: countdown 10s linear;
+            animation-fill-mode: forwards;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .mainImg {
+            z-index: 99999;
+            width: 400px;
+            min-height: 360px;
+            height: 360px;
+        }
+        & .title {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: initial;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+        & .span {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 28px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            justify-content: center;
+            color: #ffffff;
+            opacity: 0.75;
+        }
+    }
+    .staff {
+        .phone {
+            bottom: 1px;
+            height: fit-content;
+            top: 68px;
+            position: absolute;
+            font-size: 10px;
+            padding: 2px;
+            right: 16px;
+        }
+        .name {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0 !important;
+        }
+    }
+    .ReportAccept {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        width: fit-content;
+        height: 18px;
+        width: 43px;
+        svg {
+            margin: 0 !important;
+            height: 100%;
+        }
+    }
+    .admin_new_report {
+        font-family: "Montserrat";
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 11vw;
+        max-width: 11vw;
+        height: 140px;
+        background: linear-gradient(90.05deg, rgba(0, 0, 0, 0.349) 1.27%, rgba(0, 0, 0, 0.349) 93.28%, rgba(0, 0, 0, 0.275) 99.95%, rgba(0, 0, 0, 0) 99.96%);
+        position: relative;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+            width: 100%;
+            height: 35px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.450972) 99.96%);
+            border-radius: 6px 6px 0 0;
+            .name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                color: rgba(255,
+                255,
+                255,
+                0.95);
+            }
+            .id {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.95);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.450972) 99.96%);
+                padding: 0px 10px;
+            }
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 100%;
+            padding: 5px;
+            .line {
+                display: flex;
+                align-items: start;
+                height: 100%;
+                .value {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 0px 7.5px;
+                    color: rgba(255, 255, 255, 0.95);
+                }
+            }
+            .actions {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 5px;
+                width: 100%;
+                .action {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: rgba(255, 255, 255, 0.95);
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                    }
+                    &:nth-child(2) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .alerts {
+        font-family: "Montserrat", sans-serif;
+        position: absolute;
+        top: 10px;
+        left: 250%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1000;
+    }
+    .alert {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        width: 29.06vw;
+        min-height: 54px;
+        height: 54px;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 0 5px 5px 0;
+        padding: 0;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 300ms, transform 300ms;
+        .content {
+            margin: 0;
+            font-size: 1.67vh;
+            font-weight: 400;
+            color: #ffffff;
+            padding: 0 1.04vh;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex: 1 1 auto;
+        }
+        .loading-bar {
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 3px;
+            background-color: #ffffff;
+            animation: loading 10s linear forwards;
+            width: 100%;
+        }
+        &.appear {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        &.appear-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        &.appear-done {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
